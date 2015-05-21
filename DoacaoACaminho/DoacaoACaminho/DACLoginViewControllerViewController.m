@@ -20,9 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.center = self.view.center;
-    [self.view addSubview:loginButton];
+//    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+//    loginButton.center = self.view.center;
+//    [self.view addSubview:loginButton];
+//    
+    if ([FBSDKAccessToken currentAccessToken]) {
+        // User is logged in, do work such as go to next view controller.
+    }
     
     }
 
@@ -31,7 +35,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    [FBSDKLoginButton class];
+    return YES;
+}
 
 /*
 #pragma mark - Navigation
