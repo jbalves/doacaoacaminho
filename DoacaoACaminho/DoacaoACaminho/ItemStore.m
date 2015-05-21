@@ -13,7 +13,7 @@
 {
     static ItemStore *sharedStore;
     if(!sharedStore){
-        sharedStore = [sharedStore initPrivate];
+        sharedStore = [[self alloc] initPrivate];
        
     }
      return sharedStore;
