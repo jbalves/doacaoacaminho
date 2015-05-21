@@ -131,11 +131,80 @@
 
 - (void) button: (id) sender
 {
-    
-    //UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    //SegundaViewController *s = [sb instantiateViewControllerWithIdentifier:@"sb1"];
-    //[self presentViewController:s animated:YES completion:nil];
-    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    DACCarregaInformcaoViewController *ci = [storyboard instantiateViewControllerWithIdentifier:@"st"];
+    [self presentViewController:ci animated:YES completion:nil];
+        
+}
+
+-(void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
+    if(selected)
+    {
+        UIView *circularView = [[UIView alloc]initWithFrame:CGRectMake(-55, -55, 110, 110)];
+        circularView.tag = 1000;
+        
+        UIButton *btn1;
+        UIButton *btn2;
+        UIButton *btn3;
+        UIButton *btn4;
+        UIButton *btn5;
+        UIButton *btn6;
+        UIButton *btn7;
+        
+        btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+        [circularView addSubview:btn1];
+        btn1.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                       initWithTarget:self action:@selector(buttonTapped:)];
+        tap.numberOfTapsRequired = 1;
+        [btn1 addGestureRecognizer:tap];
+        
+        btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
+        [circularView addSubview:btn2];
+        
+        btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
+        [circularView addSubview:btn3];
+        
+        btn4 = [UIButton buttonWithType:UIButtonTypeCustom];
+        [circularView addSubview:btn4];
+        
+        btn5 = [UIButton buttonWithType:UIButtonTypeCustom];
+        [circularView addSubview:btn5];
+        
+        btn6 = [UIButton buttonWithType:UIButtonTypeCustom];
+        [circularView addSubview:btn6];
+        
+        btn7 = [UIButton buttonWithType:UIButtonTypeCustom];
+        [circularView addSubview:btn7];
+        
+        [btn1 setBackgroundImage:[UIImage imageNamed:@"message-icon"] forState:UIControlStateNormal];
+        [btn2 setBackgroundImage:[UIImage imageNamed:@"message-icon"] forState:UIControlStateNormal];
+        [btn3 setBackgroundImage:[UIImage imageNamed:@"message-icon"] forState:UIControlStateNormal];
+        [btn4 setBackgroundImage:[UIImage imageNamed:@"message-icon"] forState:UIControlStateNormal];
+        [btn5 setBackgroundImage:[UIImage imageNamed:@"message-icon"] forState:UIControlStateNormal];
+        [btn6 setBackgroundImage:[UIImage imageNamed:@"message-icon"] forState:UIControlStateNormal];
+        [btn7 setBackgroundImage:[UIImage imageNamed:@"message-icon"] forState:UIControlStateNormal];
+        
+        CGPoint point = CGPointMake(55, 55);
+        btn1.frame = CGRectMake(point.x - 15.00, point.y - 55.00, 30, 30);
+        btn2.frame = CGRectMake(point.x + 16.27, point.y - 39.94, 30, 30);
+        btn3.frame = CGRectMake(point.x + 24.00, point.y - 06.10, 30, 30);
+        btn4.frame = CGRectMake(point.x + 02.36, point.y + 21.04, 30, 30);
+        btn5.frame = CGRectMake(point.x - 32.36, point.y + 21.04, 30, 30);
+        btn6.frame = CGRectMake(point.x - 54.00, point.y - 06.10, 30, 30);
+        btn7.frame = CGRectMake(point.x - 46.27, point.y - 39.94, 30, 30);
+        
+    }
+   // else
+    //{
+        //[[self viewWithTag:1000] removeFromSuperview];
+   // }
+}
+
+-(void)buttonTapped:(UITapGestureRecognizer*)sender
+{
+    NSLog(@"1");
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar

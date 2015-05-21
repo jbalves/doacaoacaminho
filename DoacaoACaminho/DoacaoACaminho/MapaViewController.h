@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DACCarregaInformcaoViewController.h"
 @import MapKit;
 
 @interface MapaViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UISearchBarDelegate, UITabBarControllerDelegate>

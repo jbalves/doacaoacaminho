@@ -128,23 +128,24 @@
             </objects>
             <point key="canvasLocation" x="4126" y="307"/>
         </scene>
-        <!--View Controller-->
+        <!--Carrega Informcao View Controller-->
         <scene sceneID="T7G-36-Vso">
             <objects>
-                <viewController id="LoQ-DZ-fcR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="st" id="LoQ-DZ-fcR" customClass="DACCarregaInformcaoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VhV-SP-Zck"/>
                         <viewControllerLayoutGuide type="bottom" id="Yrj-U7-zEN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nov-jQ-5Dc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZS-TU-nwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3412" y="648"/>
+            <point key="canvasLocation" x="3376" y="678"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="U0O-E4-RGe">

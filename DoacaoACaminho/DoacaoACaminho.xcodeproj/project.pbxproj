@@ -17,6 +17,7 @@
 		712BAF8B1B0E0FB4000E2E9E /* DoacaoACaminhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF8A1B0E0FB4000E2E9E /* DoacaoACaminhoTests.m */; };
 		79012CB71B0E177900531F7D /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CB61B0E177900531F7D /* MapaViewController.m */; };
 		79012CB91B0E256100531F7D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79012CB81B0E256100531F7D /* MapKit.framework */; };
+		79012CBC1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		79012CB51B0E177900531F7D /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
 		79012CB61B0E177900531F7D /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
 		79012CB81B0E256100531F7D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACCarregaInformcaoViewController.h; sourceTree = "<group>"; };
+		79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACCarregaInformcaoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				712BAF781B0E0FB4000E2E9E /* Main.storyboard */,
 				79012CB51B0E177900531F7D /* MapaViewController.h */,
 				79012CB61B0E177900531F7D /* MapaViewController.m */,
+				79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */,
+				79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */,
 				712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */,
 				712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */,
 				712BAF721B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld */,
@@ -236,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79012CBC1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m in Sources */,
 				712BAF741B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld in Sources */,
 				79012CB71B0E177900531F7D /* MapaViewController.m in Sources */,
 				712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */,
