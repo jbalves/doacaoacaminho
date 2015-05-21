@@ -33,6 +33,8 @@
 		712BAFBE1B0E2093000E2E9E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBB1B0E2093000E2E9E /* FBSDKCoreKit.framework */; };
 		712BAFBF1B0E2093000E2E9E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBC1B0E2093000E2E9E /* FBSDKLoginKit.framework */; };
 		712BAFC01B0E2093000E2E9E /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */; };
+		95FDEC551B0E2FF500F7817D /* DACListaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FDEC521B0E2FF500F7817D /* DACListaTableViewController.m */; };
+		95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FDEC541B0E2FF500F7817D /* ItemStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		712BAFBB1B0E2093000E2E9E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		712BAFBC1B0E2093000E2E9E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		95FDEC511B0E2FF500F7817D /* DACListaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACListaTableViewController.h; sourceTree = "<group>"; };
+		95FDEC521B0E2FF500F7817D /* DACListaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACListaTableViewController.m; sourceTree = "<group>"; };
+		95FDEC531B0E2FF500F7817D /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
+		95FDEC541B0E2FF500F7817D /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,10 @@
 				712BAF701B0E0FB4000E2E9E /* AppDelegate.m */,
 				712BAF751B0E0FB4000E2E9E /* ViewController.h */,
 				712BAF761B0E0FB4000E2E9E /* ViewController.m */,
+				95FDEC511B0E2FF500F7817D /* DACListaTableViewController.h */,
+				95FDEC521B0E2FF500F7817D /* DACListaTableViewController.m */,
+				95FDEC531B0E2FF500F7817D /* ItemStore.h */,
+				95FDEC541B0E2FF500F7817D /* ItemStore.m */,
 				712BAF781B0E0FB4000E2E9E /* Main.storyboard */,
 				712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */,
 				712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */,
@@ -304,6 +314,8 @@
 			files = (
 				712BAF741B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld in Sources */,
 				712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */,
+				95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */,
+				95FDEC551B0E2FF500F7817D /* DACListaTableViewController.m in Sources */,
 				712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */,
 				712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */,
 			);
