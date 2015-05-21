@@ -33,11 +33,12 @@
 		712BAFBE1B0E2093000E2E9E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBB1B0E2093000E2E9E /* FBSDKCoreKit.framework */; };
 		712BAFBF1B0E2093000E2E9E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBC1B0E2093000E2E9E /* FBSDKLoginKit.framework */; };
 		712BAFC01B0E2093000E2E9E /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */; };
-		95FDEC551B0E2FF500F7817D /* DACListaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FDEC521B0E2FF500F7817D /* DACListaTableViewController.m */; };
-		95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FDEC541B0E2FF500F7817D /* ItemStore.m */; };
 		79012CB71B0E177900531F7D /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CB61B0E177900531F7D /* MapaViewController.m */; };
 		79012CB91B0E256100531F7D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79012CB81B0E256100531F7D /* MapKit.framework */; };
 		79012CBC1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */; };
+		79E02F2C1B0E6FC900191F3D /* DACDoacoesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E02F2B1B0E6FC900191F3D /* DACDoacoesViewController.m */; };
+		95FDEC551B0E2FF500F7817D /* DACListaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FDEC521B0E2FF500F7817D /* DACListaTableViewController.m */; };
+		95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FDEC541B0E2FF500F7817D /* ItemStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,15 +84,17 @@
 		712BAFBB1B0E2093000E2E9E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		712BAFBC1B0E2093000E2E9E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
-		95FDEC511B0E2FF500F7817D /* DACListaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACListaTableViewController.h; sourceTree = "<group>"; };
-		95FDEC521B0E2FF500F7817D /* DACListaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACListaTableViewController.m; sourceTree = "<group>"; };
-		95FDEC531B0E2FF500F7817D /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
-		95FDEC541B0E2FF500F7817D /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
 		79012CB51B0E177900531F7D /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
 		79012CB61B0E177900531F7D /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
 		79012CB81B0E256100531F7D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACCarregaInformcaoViewController.h; sourceTree = "<group>"; };
 		79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACCarregaInformcaoViewController.m; sourceTree = "<group>"; };
+		79E02F2A1B0E6FC900191F3D /* DACDoacoesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACDoacoesViewController.h; sourceTree = "<group>"; };
+		79E02F2B1B0E6FC900191F3D /* DACDoacoesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACDoacoesViewController.m; sourceTree = "<group>"; };
+		95FDEC511B0E2FF500F7817D /* DACListaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACListaTableViewController.h; sourceTree = "<group>"; };
+		95FDEC521B0E2FF500F7817D /* DACListaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACListaTableViewController.m; sourceTree = "<group>"; };
+		95FDEC531B0E2FF500F7817D /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
+		95FDEC541B0E2FF500F7817D /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				95FDEC531B0E2FF500F7817D /* ItemStore.h */,
 				95FDEC541B0E2FF500F7817D /* ItemStore.m */,
 				712BAF781B0E0FB4000E2E9E /* Main.storyboard */,
+				79E02F2A1B0E6FC900191F3D /* DACDoacoesViewController.h */,
+				79E02F2B1B0E6FC900191F3D /* DACDoacoesViewController.m */,
 				79012CB51B0E177900531F7D /* MapaViewController.h */,
 				79012CB61B0E177900531F7D /* MapaViewController.m */,
 				79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */,
@@ -337,6 +342,7 @@
 				712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */,
 				95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */,
 				95FDEC551B0E2FF500F7817D /* DACListaTableViewController.m in Sources */,
+				79E02F2C1B0E6FC900191F3D /* DACDoacoesViewController.m in Sources */,
 				712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */,
 				712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */,
 			);
