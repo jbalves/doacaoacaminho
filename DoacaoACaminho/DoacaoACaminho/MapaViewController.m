@@ -25,8 +25,6 @@
     //[self.lm requestAlwaysAuthorization];
     [self.lm requestWhenInUseAuthorization];
     
-    MKCoordinateRegion region = {{0.0 , 0.0} , {0.0 , 0.0}};
-    
     //Instituto Alguém
     MKPointAnnotation *annotation1 =[[MKPointAnnotation alloc]init];
     annotation1.coordinate = CLLocationCoordinate2DMake(-3.118250, -59.991810);

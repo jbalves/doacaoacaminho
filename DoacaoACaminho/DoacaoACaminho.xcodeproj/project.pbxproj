@@ -35,6 +35,9 @@
 		712BAFC01B0E2093000E2E9E /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */; };
 		95FDEC551B0E2FF500F7817D /* DACListaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FDEC521B0E2FF500F7817D /* DACListaTableViewController.m */; };
 		95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FDEC541B0E2FF500F7817D /* ItemStore.m */; };
+		79012CB71B0E177900531F7D /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CB61B0E177900531F7D /* MapaViewController.m */; };
+		79012CB91B0E256100531F7D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79012CB81B0E256100531F7D /* MapKit.framework */; };
+		79012CBC1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,11 @@
 		95FDEC521B0E2FF500F7817D /* DACListaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACListaTableViewController.m; sourceTree = "<group>"; };
 		95FDEC531B0E2FF500F7817D /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
 		95FDEC541B0E2FF500F7817D /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
+		79012CB51B0E177900531F7D /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
+		79012CB61B0E177900531F7D /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
+		79012CB81B0E256100531F7D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACCarregaInformcaoViewController.h; sourceTree = "<group>"; };
+		79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACCarregaInformcaoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 				712BAFBE1B0E2093000E2E9E /* FBSDKCoreKit.framework in Frameworks */,
 				712BAF9D1B0E1873000E2E9E /* Parse.framework in Frameworks */,
 				712BAF9C1B0E1873000E2E9E /* Bolts.framework in Frameworks */,
+				79012CB91B0E256100531F7D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				712BAF991B0E182F000E2E9E /* Frameworks */,
+				79012CB81B0E256100531F7D /* MapKit.framework */,
 				712BAF6A1B0E0FB4000E2E9E /* DoacaoACaminho */,
 				712BAF871B0E0FB4000E2E9E /* DoacaoACaminhoTests */,
 				712BAF691B0E0FB4000E2E9E /* Products */,
