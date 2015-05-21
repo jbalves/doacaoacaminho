@@ -11,7 +11,6 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <Parse/Parse.h>
 
-
 @interface DACLoginViewControllerViewController ()
 
 @end
@@ -24,47 +23,15 @@
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     loginButton.center = self.view.center;
     [self.view addSubview:loginButton];
-}
+    
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)signUpPressed:(id)sender {
-    if (self.userNameField.text == nil || [self.userNameField.text isEqualToString:@""]) {
-        [self.alertLabel setText:@"Username Required"];
-        return;
-    }
-    if (self.passwordField.text == nil || [self.passwordField.text isEqualToString:@""]) {
-        [self.alertLabel setText:@"Password Required"];
-        return;
-    }
-    
-    if (self.emailField.text ==nil || [self.emailField.text isEqualToString:@""]) {
-        [self.alertLabel setText:@"Email required"];
-        return;
-    }
-    
-    PFUser *user = [PFUser user];
-    user.username = self.userNameField.text;
-    user.password = self.passwordField.text;
-    user.email = self.emailField.text;
-    
-    // other fields can be set if you want to save more information
-   // user[@"phone"] = @"650-555-0000";
-    
-    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
-            // Hooray! Let them use the app now.
-        } else {
-            NSString *errorString = [error userInfo][@"error"];
-            // Show the errorString somewhere and let the user try again.
-        }
-    }];
-    
-    
-}
+
 
 /*
 #pragma mark - Navigation
@@ -76,6 +43,5 @@
 }
 */
 
-//- (IBAction)signUpPressed:(id)sender {
-//}
+
 @end
