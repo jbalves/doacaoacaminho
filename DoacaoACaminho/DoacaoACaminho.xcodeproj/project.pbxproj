@@ -15,6 +15,7 @@
 		712BAF7C1B0E0FB4000E2E9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */; };
 		712BAF7F1B0E0FB4000E2E9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */; };
 		712BAF8B1B0E0FB4000E2E9E /* DoacaoACaminhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF8A1B0E0FB4000E2E9E /* DoacaoACaminhoTests.m */; };
+		79012CB71B0E177900531F7D /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CB61B0E177900531F7D /* MapaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		712BAF841B0E0FB4000E2E9E /* DoacaoACaminhoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoacaoACaminhoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		712BAF891B0E0FB4000E2E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		712BAF8A1B0E0FB4000E2E9E /* DoacaoACaminhoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoacaoACaminhoTests.m; sourceTree = "<group>"; };
+		79012CB51B0E177900531F7D /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
+		79012CB61B0E177900531F7D /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				712BAF751B0E0FB4000E2E9E /* ViewController.h */,
 				712BAF761B0E0FB4000E2E9E /* ViewController.m */,
 				712BAF781B0E0FB4000E2E9E /* Main.storyboard */,
+				79012CB51B0E177900531F7D /* MapaViewController.h */,
+				79012CB61B0E177900531F7D /* MapaViewController.m */,
 				712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */,
 				712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */,
 				712BAF721B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld */,
@@ -223,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				712BAF741B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld in Sources */,
+				79012CB71B0E177900531F7D /* MapaViewController.m in Sources */,
 				712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */,
 				712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */,
 				712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */,
@@ -420,6 +426,7 @@
 				712BAF901B0E0FB4000E2E9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		712BAF911B0E0FB4000E2E9E /* Build configuration list for PBXNativeTarget "DoacaoACaminhoTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +435,7 @@
 				712BAF931B0E0FB4000E2E9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
