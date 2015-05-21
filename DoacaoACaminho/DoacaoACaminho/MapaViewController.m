@@ -26,7 +26,7 @@
     
     MKCoordinateRegion region = {{0.0 , 0.0} , {0.0 , 0.0}};
     
-    //Instituto Alguem
+    //Instituto Alguém
     MKPointAnnotation *annotation1 =[[MKPointAnnotation alloc]init];
     annotation1.coordinate = CLLocationCoordinate2DMake(-3.118250, -59.991810);
     annotation1.title = [NSString stringWithFormat:@"Instituto Alguém"];
@@ -118,8 +118,6 @@
     UIButton *advertButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     [advertButton addTarget:self action:@selector(button:) forControlEvents:UIControlEventTouchUpInside];
     
-    //self.cl.latitude =
-    
     myPin.rightCalloutAccessoryView = advertButton;
     myPin.draggable = NO;
     myPin.highlighted = YES;
@@ -191,6 +189,64 @@
 
 - (IBAction)coordenadas:(id)sender
 {
+    //Instituto Alguém
+    NSString *string1 = @"http://maps.apple.com/maps?daddr=-3.118250, -59.991810";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string1]];
     
+    //Casa da Criança
+    NSString *string2 = @"http://maps.apple.com/maps?daddr=-3.128212,-60.019614";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string2]];
+    
+    //GACC
+    NSString *string3 = @"http://maps.apple.com/maps?daddr=-3.106615,-60.025107";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string3]];
+    
+    //Lar Fabiano de Cristo
+    NSString *string4 = @"http://maps.apple.com/maps?daddr=-3.052391,-60.048599";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string4]];
+    
+    //AACH - Casa Vhida
+    NSString *string5 = @"http://maps.apple.com/maps?daddr=-3.089008,-60.041589";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string5]];
+    
+    //Casa Mamãe Margarida
+    NSString *string6 = @"http://maps.apple.com/maps?daddr=-3.060130,-59.955029";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string6]];
+    
+    //Abrigo Moacir Alves
+    NSString *string7 = @"http://maps.apple.com/maps?daddr=-3.077436,-60.036255";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string7]];
+    
+    //Lar Batista Janell Doyle
+    NSString *string8 = @"http://maps.apple.com/maps?daddr=-3.120362,-59.938504";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string8]];
+    
+    //ADEME
+    NSString *string9 = @"http://maps.apple.com/maps?daddr=-3.098666, -59.996944";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string9]];
+    
+    //APAE
+    NSString *string10 = @"http://maps.apple.com/maps?daddr=-3.137727,-59.9823294";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string10]];
+    
+    //Lar das Marias
+    NSString *string11 = @"http://maps.apple.com/maps?daddr=-3.085929, -60.036875";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string11]];
+    
+    //LBV - Legião da Boa Vontade
+    NSString *string12 = @"http://maps.apple.com/maps?daddr=-3.127647,-60.007607";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string12]];
+    
+    //Educandario Gustavo Capanema
+    NSString *string13 = @"http://maps.apple.com/maps?daddr=-3.148717,-60.002632";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string13]];
+
+
+
+
+
+
+
+
 }
 @end
