@@ -63,30 +63,48 @@
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
  {
      
- static NSString *simpleTableIdentifier = @"ItemCell";
- 
- UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
- 
- if (cell == nil) {
- cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
- }
-     if((cell.accessoryType = UITableViewCellAccessoryNone)){
-         cell.accessoryType=UITableViewCellAccessoryCheckmark;
-         
-     }
-     NSString *nome;
-    // NSString *code;
-     
-     if(indexPath.section==0){
-         nome=[self.roupas objectAtIndex:indexPath.row];
-         //code=[self.statesCodes objectAtIndex:indexPath.row];
-     }else if (indexPath.section==1){
-         nome=[self.alimentos objectAtIndex:indexPath.row];
-         //code=[self.districtCodes objectAtIndex:indexPath.row];
-     }
+     static NSString *simpleTableIdentifier = @"ItemCell";
 
- cell.textLabel.text = nome;
- return cell;
+     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+
+     if (cell == nil) {
+         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+     }
+//     if((cell.accessoryType = UITableViewCellAccessoryNone)){
+//         cell.accessoryType=UITableViewCellAccessoryCheckmark;
+//     
+//     }
+//     
+//     
+//     NSString *nome;
+//     // NSString *code;
+//     
+//     if(indexPath.section==0){
+//         nome=[self.roupas objectAtIndex:indexPath.row];
+//         //code=[self.statesCodes objectAtIndex:indexPath.row];
+//     }else if (indexPath.section==1){
+//         nome=[self.alimentos objectAtIndex:indexPath.row];
+//         //code=[self.districtCodes objectAtIndex:indexPath.row];
+//     }
+//
+//     cell.textLabel.text = nome;
+     PFObject *item = (PFObject*) [[[ItemStore sharedStore] getAllItens] objectAtIndex:indexPath.row];
+     NSString *name = item[@"name"];
+     NSString *category = item[@"itemCategory"];
+     int sec;
+     if([category isEqualToString:@"Roupas"]) {
+         sec = 0;
+     } else if([category isEqualToString:@"Alimentos"]) {
+         sec = 0;
+     }
+     
+     NSIndexPath *iPath = [NSIndexPath indexPathForRow:indexPath.row inSection:sec];
+     indexPath = iPath;
+     
+     NSLog(@"%@", name);
+     cell.textLabel.text = name;
+     
+     return cell;
  }
 
 /*
