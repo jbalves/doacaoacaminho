@@ -63,7 +63,7 @@
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
  {
      
- static NSString *simpleTableIdentifier = @"SimpleTableCell";
+ static NSString *simpleTableIdentifier = @"ItemCell";
  
  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
  
