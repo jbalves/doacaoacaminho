@@ -26,7 +26,7 @@
         <!--Item 2-->
         <scene sceneID="QlO-le-gFR">
             <objects>
-                <viewController id="Gsn-ay-08U" sceneMemberID="viewController">
+                <viewController id="Gsn-ay-08U" customClass="MapaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fLM-IQ-9jf"/>
                         <viewControllerLayoutGuide type="bottom" id="2eP-vv-cVH"/>
@@ -36,16 +36,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bmu-6q-IX3">
-                                <rect key="frame" x="0.0" y="-8" width="616" height="600"/>
+                                <rect key="frame" x="0.0" y="-8" width="616" height="515"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ay-Rv-NTC">
+                                <rect key="frame" x="100" y="513" width="38" height="30"/>
+                                <state key="normal" title="Local">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSf-sE-lNm">
+                                <rect key="frame" x="401" y="513" width="93" height="30"/>
+                                <state key="normal" title="Coordenadas">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="coordenadas:" destination="Gsn-ay-08U" eventType="touchUpInside" id="c0G-W7-dfT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="l7Z-2F-bE9"/>
+                    <connections>
+                        <outlet property="map" destination="bmu-6q-IX3" id="cnV-uP-NpL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HoW-dO-QgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2728" y="638"/>
+            <point key="canvasLocation" x="2671" y="692"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="Y37-Mo-FXc">
