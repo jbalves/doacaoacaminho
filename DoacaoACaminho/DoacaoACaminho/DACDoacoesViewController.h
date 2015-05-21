@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DACDoacoesViewController : UIViewController
+@interface DACDoacoesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+
 
 @end
