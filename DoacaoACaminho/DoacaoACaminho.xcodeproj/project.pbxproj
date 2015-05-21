@@ -33,6 +33,7 @@
 		712BAFBE1B0E2093000E2E9E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBB1B0E2093000E2E9E /* FBSDKCoreKit.framework */; };
 		712BAFBF1B0E2093000E2E9E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBC1B0E2093000E2E9E /* FBSDKLoginKit.framework */; };
 		712BAFC01B0E2093000E2E9E /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */; };
+		712BAFC31B0E278A000E2E9E /* DACLoginViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAFC21B0E278A000E2E9E /* DACLoginViewControllerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		712BAFBB1B0E2093000E2E9E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		712BAFBC1B0E2093000E2E9E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		712BAFC11B0E278A000E2E9E /* DACLoginViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACLoginViewControllerViewController.h; sourceTree = "<group>"; };
+		712BAFC21B0E278A000E2E9E /* DACLoginViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACLoginViewControllerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +146,8 @@
 				712BAF751B0E0FB4000E2E9E /* ViewController.h */,
 				712BAF761B0E0FB4000E2E9E /* ViewController.m */,
 				712BAF781B0E0FB4000E2E9E /* Main.storyboard */,
-				712BAFB81B0E1D31000E2E9E /* DACLoginViewController.h */,
-				712BAFB91B0E1D31000E2E9E /* DACLoginViewController.m */,
+				712BAFC11B0E278A000E2E9E /* DACLoginViewControllerViewController.h */,
+				712BAFC21B0E278A000E2E9E /* DACLoginViewControllerViewController.m */,
 				712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */,
 				712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */,
 				712BAF721B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld */,
@@ -306,8 +309,8 @@
 			files = (
 				712BAF741B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld in Sources */,
 				712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */,
-				712BAFBA1B0E1D31000E2E9E /* DACLoginViewController.m in Sources */,
 				712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */,
+				712BAFC31B0E278A000E2E9E /* DACLoginViewControllerViewController.m in Sources */,
 				712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
