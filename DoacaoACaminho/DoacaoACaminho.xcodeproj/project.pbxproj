@@ -153,6 +153,10 @@
 				95FDEC531B0E2FF500F7817D /* ItemStore.h */,
 				95FDEC541B0E2FF500F7817D /* ItemStore.m */,
 				712BAF781B0E0FB4000E2E9E /* Main.storyboard */,
+				79012CB51B0E177900531F7D /* MapaViewController.h */,
+				79012CB61B0E177900531F7D /* MapaViewController.m */,
+				79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */,
+				79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */,
 				712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */,
 				712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */,
 				712BAF721B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld */,
@@ -261,6 +265,11 @@
 				TargetAttributes = {
 					712BAF671B0E0FB4000E2E9E = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					712BAF831B0E0FB4000E2E9E = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -312,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79012CBC1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m in Sources */,
 				712BAF741B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld in Sources */,
+				79012CB71B0E177900531F7D /* MapaViewController.m in Sources */,
 				712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */,
 				95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */,
 				95FDEC551B0E2FF500F7817D /* DACListaTableViewController.m in Sources */,
