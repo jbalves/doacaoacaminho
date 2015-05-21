@@ -109,6 +109,49 @@
 
 }
 
+// criando as anotações
+- (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    MKPinAnnotationView *myPin = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"current"];
+    myPin.pinColor = MKPinAnnotationColorPurple;
+    
+    UIButton *advertButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    [advertButton addTarget:self action:@selector(button:) forControlEvents:UIControlEventTouchUpInside];
+    
+    //self.cl.latitude =
+    
+    myPin.rightCalloutAccessoryView = advertButton;
+    myPin.draggable = NO;
+    myPin.highlighted = YES;
+    myPin.animatesDrop = TRUE;
+    myPin.canShowCallout = YES;
+    
+    return myPin;
+    
+}
+
+- (void) button: (id) sender
+{
+    
+    //UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    //SegundaViewController *s = [sb instantiateViewControllerWithIdentifier:@"sb1"];
+    //[self presentViewController:s animated:YES completion:nil];
+    
+}
+
+// mostra a localização atual
+- (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    if (_local == 1)
+    {
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 200, 200);
+        [self.map setRegion:[self.map regionThatFits:region] animated:YES];
+        _local = 0;
+    }
+}
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
