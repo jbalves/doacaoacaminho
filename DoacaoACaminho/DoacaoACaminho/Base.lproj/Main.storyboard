@@ -36,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bmu-6q-IX3">
-                                <rect key="frame" x="0.0" y="-8" width="616" height="515"/>
+                                <rect key="frame" x="6" y="75" width="588" height="430"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ay-Rv-NTC">
                                 <rect key="frame" x="100" y="513" width="38" height="30"/>
@@ -53,6 +53,10 @@
                                     <action selector="coordenadas:" destination="Gsn-ay-08U" eventType="touchUpInside" id="c0G-W7-dfT"/>
                                 </connections>
                             </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KrP-kN-wII">
+                                <rect key="frame" x="8" y="20" width="584" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

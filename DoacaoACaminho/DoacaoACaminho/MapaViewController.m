@@ -139,6 +139,39 @@
     
 }
 
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [self.mysearch resignFirstResponder];
+    
+    // instanciando geolocalização
+    CLGeocoder *gc = [[CLGeocoder alloc] init];
+    [gc geocodeAddressString:self.mysearch.text completionHandler:^(NSArray *placemarks, NSError *error)
+     {
+         // marca localização
+         CLPlacemark *placemark = [placemarks objectAtIndex:0];
+         
+         MKCoordinateRegion region;
+         CLLocationCoordinate2D newLocation = [placemark.location coordinate];
+         region.center = [(CLCircularRegion *) placemark.region center];
+         
+         MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+         [annotation setCoordinate:newLocation];
+         [annotation setTitle:self.mysearch.text];
+         [self.map addAnnotation:annotation];
+         
+         // scroll para a busca
+         MKMapRect mr = [self.map visibleMapRect];
+         MKMapPoint pt = MKMapPointForCoordinate([annotation coordinate]);
+         mr.origin.x = pt.x - mr.size.width * 0.5;
+         mr.origin.y = pt.y - mr.size.height * 0.25;
+         [self.map setVisibleMapRect:mr animated:YES];
+         
+         
+     }];
+    
+}
+
+
 // mostra a localização atual
 - (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
@@ -149,8 +182,6 @@
         _local = 0;
     }
 }
-
-
 
 - (void)didReceiveMemoryWarning
 {
