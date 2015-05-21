@@ -16,6 +16,7 @@
 		712BAF7F1B0E0FB4000E2E9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */; };
 		712BAF8B1B0E0FB4000E2E9E /* DoacaoACaminhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF8A1B0E0FB4000E2E9E /* DoacaoACaminhoTests.m */; };
 		79012CB71B0E177900531F7D /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CB61B0E177900531F7D /* MapaViewController.m */; };
+		79012CB91B0E256100531F7D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79012CB81B0E256100531F7D /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		712BAF8A1B0E0FB4000E2E9E /* DoacaoACaminhoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoacaoACaminhoTests.m; sourceTree = "<group>"; };
 		79012CB51B0E177900531F7D /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
 		79012CB61B0E177900531F7D /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
+		79012CB81B0E256100531F7D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79012CB91B0E256100531F7D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +71,7 @@
 		712BAF5F1B0E0FB4000E2E9E = {
 			isa = PBXGroup;
 			children = (
+				79012CB81B0E256100531F7D /* MapKit.framework */,
 				712BAF6A1B0E0FB4000E2E9E /* DoacaoACaminho */,
 				712BAF871B0E0FB4000E2E9E /* DoacaoACaminhoTests */,
 				712BAF691B0E0FB4000E2E9E /* Products */,
@@ -176,6 +180,11 @@
 				TargetAttributes = {
 					712BAF671B0E0FB4000E2E9E = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					712BAF831B0E0FB4000E2E9E = {
 						CreatedOnToolsVersion = 6.3.1;

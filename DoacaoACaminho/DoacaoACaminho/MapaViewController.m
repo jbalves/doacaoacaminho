@@ -22,7 +22,8 @@
     self.mysearch.delegate = self;
     self.map.delegate = self;
     self.lm = [[CLLocationManager alloc] init];
-    [self.lm requestAlwaysAuthorization];
+    //[self.lm requestAlwaysAuthorization];
+    [self.lm requestWhenInUseAuthorization];
     
     MKCoordinateRegion region = {{0.0 , 0.0} , {0.0 , 0.0}};
     
@@ -168,6 +169,14 @@
      }];
     
 }
+
+- (IBAction)local:(id)sender
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(self.map.userLocation.coordinate, 200, 200);
+    [self.map setRegion:[self.map regionThatFits:region] animated:YES];
+    _local = 1;
+}
+
 
 
 // mostra a localização atual
