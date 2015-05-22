@@ -82,15 +82,16 @@
                         <viewControllerLayoutGuide type="bottom" id="oZS-5h-ARV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VM4-7O-YGQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="u6m-iV-q6V"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVh-EK-CtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2728" y="-24"/>
+            <point key="canvasLocation" x="2665.5" y="-42.5"/>
         </scene>
         <!--Lista Table View Controller-->
         <scene sceneID="Og7-eM-Zw2">
