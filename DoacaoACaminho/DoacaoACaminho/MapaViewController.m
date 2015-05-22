@@ -317,12 +317,6 @@
     NSString *string13 = @"http://maps.apple.com/maps?daddr=-3.148717,-60.002632";
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string13]];
 
-
-
-
-
-
-
-
 }
+
 @end
