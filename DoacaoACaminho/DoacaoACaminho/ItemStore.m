@@ -9,39 +9,39 @@
 #import "ItemStore.h"
 
 @implementation ItemStore
-+ (instancetype)sharedStore
-{
+
++ (instancetype)sharedStore {
     static ItemStore *sharedStore;
-    if(!sharedStore){
+    if(!sharedStore)
         sharedStore = [[self alloc] initPrivate];
-       
-    }
-     return sharedStore;
+    
+    return sharedStore;
+}
+
+- (instancetype)init {
+    @throw [NSException exceptionWithName:@"Couldn't create instance" reason:@"Use [ItemStore sharedStore]"userInfo:NULL];
 }
 
 -(instancetype) initPrivate{
-    self=[super init];
-    return self;
+    return (self = [super init]);
 }
 
 -(NSArray *) getAllItens{
-    NSArray *objects;
+    NSMutableArray *allObjects = [NSMutableArray new];
     
     PFQuery *query = [PFQuery queryWithClassName:@"Item"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
-            NSLog(@"Successfully retrieved %lu scores.", objects.count);
-            // Do something with the found objects
-            for (PFObject *object in objects) {
-                NSLog(@"%@", object.objectId);
-            }
+            [allObjects addObjectsFromArray:objects];
+            NSLog(@"Successfully retrieved %lu scores.", allObjects.count);
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
-    return objects;
+    NSLog(@"objetos recuperados -> %lu", allObjects.count);
+    return allObjects.copy;
 }
 
 @end

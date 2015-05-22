@@ -43,65 +43,27 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return 0;
+    return 1;
     
 }
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    if(section==0) {
-        return @"Roupas";
-    }else{
-        return @"Alimentos";
-    }
-}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [[ItemStore sharedStore] getAllItens].count;
+    NSUInteger num = [[ItemStore sharedStore] getAllItens].count;
+    NSLog(@"quantidade -> %lu", num);
+    return num;
 }
 
 
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
  {
+     NSString *cellIdentifier = @"ItemCell";
+
+     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
      
-     static NSString *simpleTableIdentifier = @"ItemCell";
-
-     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-
-     if (cell == nil) {
-         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-     }
-//     if((cell.accessoryType = UITableViewCellAccessoryNone)){
-//         cell.accessoryType=UITableViewCellAccessoryCheckmark;
-//     
-//     }
-//     
-//     
-//     NSString *nome;
-//     // NSString *code;
-//     
-//     if(indexPath.section==0){
-//         nome=[self.roupas objectAtIndex:indexPath.row];
-//         //code=[self.statesCodes objectAtIndex:indexPath.row];
-//     }else if (indexPath.section==1){
-//         nome=[self.alimentos objectAtIndex:indexPath.row];
-//         //code=[self.districtCodes objectAtIndex:indexPath.row];
-//     }
-//
-//     cell.textLabel.text = nome;
      PFObject *item = (PFObject*) [[[ItemStore sharedStore] getAllItens] objectAtIndex:indexPath.row];
      NSString *name = item[@"name"];
-     NSString *category = item[@"itemCategory"];
-     int sec;
-     if([category isEqualToString:@"Roupas"]) {
-         sec = 0;
-     } else if([category isEqualToString:@"Alimentos"]) {
-         sec = 0;
-     }
-     
-     NSIndexPath *iPath = [NSIndexPath indexPathForRow:indexPath.row inSection:sec];
-     indexPath = iPath;
-     
-     NSLog(@"%@", name);
      cell.textLabel.text = name;
      
      return cell;
