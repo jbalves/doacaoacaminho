@@ -27,21 +27,16 @@
 }
 
 -(NSArray *) getAllItens{
-    NSMutableArray *allObjects = [NSMutableArray new];
-    
     PFQuery *query = [PFQuery queryWithClassName:@"Item"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            // The find succeeded.
-            [allObjects addObjectsFromArray:objects];
-            NSLog(@"Successfully retrieved %lu scores.", allObjects.count);
-        } else {
-            // Log details of the failure
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        }
-    }];
-    NSLog(@"objetos recuperados -> %lu", allObjects.count);
-    return allObjects.copy;
+    
+    NSArray *allObjects;
+    NSError *error;
+    allObjects = [query findObjects:&error ];
+
+    if (error) {
+        NSLog(@"Error: %@ %@", error, [error userInfo]);
+    }
+    return allObjects;
 }
 
 @end

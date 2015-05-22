@@ -28,10 +28,6 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _roupas = [NSArray arrayWithObjects:@"Camisa", nil];
-     _alimentos = [NSArray arrayWithObjects:@"Arroz", nil];
-    NSLog(@"did load..");
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,17 +38,13 @@
 #pragma mark - Table view data source
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
     return 1;
-    
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    NSUInteger num = [[ItemStore sharedStore] getAllItens].count;
-    NSLog(@"quantidade -> %lu", num);
-    return num;
+    return [[[ItemStore sharedStore] getAllItens] count];
 }
 
 
@@ -64,7 +56,13 @@
      
      PFObject *item = (PFObject*) [[[ItemStore sharedStore] getAllItens] objectAtIndex:indexPath.row];
      NSString *name = item[@"name"];
+     
      cell.textLabel.text = name;
+     
+     PFRelation *relation = [item relationForKey:@"itemCategory"];
+     PFQuery *relationQuery = [relation query];
+     NSArray *category = [relationQuery findObjects];
+     NSString *categoryName = [[category objectAtIndex:0] valueForKey:@"name"];
      
      return cell;
  }
