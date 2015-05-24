@@ -11,6 +11,7 @@
 
 @interface ItemStore : NSObject
 
-+(instancetype) sharedStore;
--(NSArray *)getAllItens;
++ (instancetype) sharedStore;
+- (NSArray *)getAllItens;
+- (NSArray*)getItemsOnCategory:(NSString*)category;
 @end

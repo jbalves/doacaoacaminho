@@ -9,38 +9,45 @@
 #import "ItemStore.h"
 
 @implementation ItemStore
-+ (instancetype)sharedStore
-{
+
++ (instancetype)sharedStore {
     static ItemStore *sharedStore;
-    if(!sharedStore){
-        sharedStore = [sharedStore initPrivate];
-       
-    }
-     return sharedStore;
-}
-
--(instancetype) initPrivate{
-    self=[super init];
-    return self;
-}
-
--(NSArray *) getAllItens{
-    NSArray *objects;
+    if(!sharedStore)
+        sharedStore = [[self alloc] initPrivate];
     
+    return sharedStore;
+}
+
+- (instancetype)init {
+    @throw [NSException exceptionWithName:@"Couldn't create instance" reason:@"Use [ItemStore sharedStore]"userInfo:NULL];
+}
+
+- (instancetype) initPrivate{
+    return (self = [super init]);
+}
+
+- (NSArray *) getAllItens{
     PFQuery *query = [PFQuery queryWithClassName:@"Item"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            // The find succeeded.
-            NSLog(@"Successfully retrieved %lu scores.", objects.count);
-            // Do something with the found objects
-            for (PFObject *object in objects) {
-                NSLog(@"%@", object.objectId);
-            }
-        } else {
-            // Log details of the failure
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        }
-    }];
+    
+    NSArray *allObjects;
+    NSError *error;
+    allObjects = [query findObjects:&error ];
+
+    if (error) {
+        NSLog(@"Error: %@ %@", error, [error userInfo]);
+    }
+    return allObjects;
+}
+
+- (NSArray*)getItemsOnCategory:(NSString *)category {
+    PFQuery *categoryQuery = [PFQuery queryWithClassName:@"Item_Category"];
+    [categoryQuery whereKey:@"name" equalTo:category];
+    
+    PFQuery *itemQuery = [PFQuery queryWithClassName:@"Item"];
+    [itemQuery whereKey:@"itemCategory" matchesKey:@"objectId" inQuery:categoryQuery];
+
+    NSArray *objects = [itemQuery findObjects];
+    
     return objects;
 }
 
