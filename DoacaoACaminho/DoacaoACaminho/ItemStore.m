@@ -33,9 +33,10 @@
     NSError *error;
     allObjects = [query findObjects:&error ];
 
-    if (error) {
-        NSLog(@"Error: %@ %@", error, [error userInfo]);
-    }
+    if (error)
+        NSLog(@"Error in DataBase operation: %@ %@", error, [error userInfo]);
+        
+    
     return allObjects;
 }
 
@@ -45,8 +46,12 @@
     
     PFQuery *itemQuery = [PFQuery queryWithClassName:@"Item"];
     [itemQuery whereKey:@"itemCategory" matchesKey:@"objectId" inQuery:categoryQuery];
-
-    NSArray *objects = [itemQuery findObjects];
+    
+    NSError *error;
+    NSArray *objects = [itemQuery findObjects:&error];
+    
+    if (error)
+        NSLog(@"Error in DataBase operation: %@ %@", error, [error userInfo]);
     
     return objects;
 }
