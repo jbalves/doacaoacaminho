@@ -37,14 +37,18 @@
 
 #pragma mark - Table view data source
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    PFQuery *categoryQuery = [PFQuery queryWithClassName:@"Item_Category"];
+    return [categoryQuery findObjects].count;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [self ranksCategoryOnSection:section];
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
-    return [[[ItemStore sharedStore] getAllItens] count];
+    return [[ItemStore sharedStore] getItemsOnCategory:[self ranksCategoryOnSection:section]].count;
 }
 
 
@@ -54,18 +58,21 @@
 
      UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
      
-     PFObject *item = (PFObject*) [[[ItemStore sharedStore] getAllItens] objectAtIndex:indexPath.row];
+     PFObject *item = (PFObject*) [[[ItemStore sharedStore] getItemsOnCategory:[self ranksCategoryOnSection:indexPath.section]] objectAtIndex:indexPath.row];
      NSString *name = item[@"name"];
      
      cell.textLabel.text = name;
-     
-     PFRelation *relation = [item relationForKey:@"itemCategory"];
-     PFQuery *relationQuery = [relation query];
-     NSArray *category = [relationQuery findObjects];
-     NSString *categoryName = [[category objectAtIndex:0] valueForKey:@"name"];
-     
      return cell;
  }
+
+- (NSString*)ranksCategoryOnSection:(NSInteger)section {
+    if(section == 0)
+        return @"Não Perecível";
+    else if(section == 1)
+        return @"Perecível";
+    else
+        return @"Brinquedo";
+}
 
 /*
 // Override to support conditional editing of the table view.

@@ -22,11 +22,11 @@
     @throw [NSException exceptionWithName:@"Couldn't create instance" reason:@"Use [ItemStore sharedStore]"userInfo:NULL];
 }
 
--(instancetype) initPrivate{
+- (instancetype) initPrivate{
     return (self = [super init]);
 }
 
--(NSArray *) getAllItens{
+- (NSArray *) getAllItens{
     PFQuery *query = [PFQuery queryWithClassName:@"Item"];
     
     NSArray *allObjects;
@@ -37,6 +37,18 @@
         NSLog(@"Error: %@ %@", error, [error userInfo]);
     }
     return allObjects;
+}
+
+- (NSArray*)getItemsOnCategory:(NSString *)category {
+    PFQuery *categoryQuery = [PFQuery queryWithClassName:@"Item_Category"];
+    [categoryQuery whereKey:@"name" equalTo:category];
+    
+    PFQuery *itemQuery = [PFQuery queryWithClassName:@"Item"];
+    [itemQuery whereKey:@"itemCategory" matchesKey:@"objectId" inQuery:categoryQuery];
+
+    NSArray *objects = [itemQuery findObjects];
+    
+    return objects;
 }
 
 @end
