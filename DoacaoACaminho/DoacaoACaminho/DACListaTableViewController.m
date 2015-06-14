@@ -17,12 +17,12 @@
 
 @implementation DACListaTableViewController
 {
-   // NSArray *tableData;
+   NSMutableArray *selectedData;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    selectedData = [[NSMutableArray alloc] init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -75,9 +75,19 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ItemCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
 }
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+}
+
+- (IBAction)continueDonation:(UIBarButtonItem *)sender {
+    NSLog(@"clicou");
+    UITableView *tbView = (UITableView*)[[self view] viewWithTag:2];
+}
+
 
 /*
 // Override to support conditional editing of the table view.
