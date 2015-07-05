@@ -8,7 +8,9 @@
 
 #import "DACListaTableViewController.h"
 
-@interface DACListaTableViewController ()
+@interface DACListaTableViewController () {
+    NSMutableArray *selectedItems;
+}
 
 @property(readonly) NSArray *roupas;
 @property(readonly) NSArray *alimentos;
@@ -16,13 +18,10 @@
 @end
 
 @implementation DACListaTableViewController
-{
-   NSMutableArray *selectedData;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    selectedData = [[NSMutableArray alloc] init];
+    selectedItems = [[NSMutableArray alloc] init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -46,33 +45,22 @@
     return [self ranksCategoryOnSection:section];
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [[ItemStore sharedStore] getItemsOnCategory:[self ranksCategoryOnSection:section]].count;
 }
 
-
- - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
  {
      NSString *cellIdentifier = @"ItemCell";
 
-     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+     ItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
      
      PFObject *item = (PFObject*) [[[ItemStore sharedStore] getItemsOnCategory:[self ranksCategoryOnSection:indexPath.section]] objectAtIndex:indexPath.row];
-     NSString *name = item[@"name"];
      
-     cell.textLabel.text = name;
+     cell.name.text =  item[@"name"];
+     cell.identifier = [[NSString alloc] initWithFormat:@"%@",item.objectId];
      return cell;
  }
-
-- (NSString*)ranksCategoryOnSection:(NSInteger)section {
-    if(section == 0)
-        return @"Não Perecível";
-    else if(section == 1)
-        return @"Perecível";
-    else
-        return @"Brinquedo";
-}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
@@ -83,11 +71,32 @@
     [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
 }
 
-- (IBAction)continueDonation:(UIBarButtonItem *)sender {
-    NSLog(@"clicou");
-    UITableView *tbView = (UITableView*)[[self view] viewWithTag:2];
+#pragma mark - auxiliary mathods
+
+- (NSString*)ranksCategoryOnSection:(NSInteger)section {
+    if(section == 0)
+        return @"Não Perecível";
+    else if(section == 1)
+        return @"Perecível";
+    else
+        return @"Brinquedo";
 }
 
+- (NSArray*)selectedItems {
+    return [selectedItems copy];
+}
+
+#pragma mark - actions
+
+- (IBAction)continueDonation:(UIBarButtonItem *)sender {
+    UITableView *tbView = (UITableView*)[[self view] viewWithTag:2];
+    NSArray *selected = [tbView indexPathsForSelectedRows];
+    ItemTableViewCell *cell;
+    for(NSIndexPath *iPath in selected) {
+        cell = (ItemTableViewCell*)[tbView cellForRowAtIndexPath:iPath];
+        [selectedItems addObject:cell.identifier];
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

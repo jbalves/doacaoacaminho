@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ItemTableViewCell.h"
 #import "ItemStore.h"
 
 @interface DACListaTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+- (NSArray*)selectedItems;
 
 @end
