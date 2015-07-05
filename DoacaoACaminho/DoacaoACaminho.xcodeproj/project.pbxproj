@@ -134,6 +134,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C13A1F41B49B5B0000562A4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				95FDEC531B0E2FF500F7817D /* ItemStore.h */,
+				95FDEC541B0E2FF500F7817D /* ItemStore.m */,
+				1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */,
+				1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		1C13A1F51B49B5CA000562A4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				712BAF781B0E0FB4000E2E9E /* Main.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		1C13A1F61B49B5D9000562A4 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				712BAF751B0E0FB4000E2E9E /* ViewController.h */,
+				712BAF761B0E0FB4000E2E9E /* ViewController.m */,
+				95FDEC511B0E2FF500F7817D /* DACListaTableViewController.h */,
+				1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */,
+				79012CB51B0E177900531F7D /* MapaViewController.h */,
+				79012CB61B0E177900531F7D /* MapaViewController.m */,
+				79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */,
+				79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
 		712BAF5F1B0E0FB4000E2E9E = {
 			isa = PBXGroup;
 			children = (
@@ -159,19 +193,9 @@
 			children = (
 				712BAF6F1B0E0FB4000E2E9E /* AppDelegate.h */,
 				712BAF701B0E0FB4000E2E9E /* AppDelegate.m */,
-				95FDEC531B0E2FF500F7817D /* ItemStore.h */,
-				95FDEC541B0E2FF500F7817D /* ItemStore.m */,
-				712BAF751B0E0FB4000E2E9E /* ViewController.h */,
-				712BAF761B0E0FB4000E2E9E /* ViewController.m */,
-				95FDEC511B0E2FF500F7817D /* DACListaTableViewController.h */,
-				1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */,
-				712BAF781B0E0FB4000E2E9E /* Main.storyboard */,
-				79012CB51B0E177900531F7D /* MapaViewController.h */,
-				79012CB61B0E177900531F7D /* MapaViewController.m */,
-				79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */,
-				79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */,
-				1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */,
-				1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */,
+				1C13A1F41B49B5B0000562A4 /* model */,
+				1C13A1F51B49B5CA000562A4 /* view */,
+				1C13A1F61B49B5D9000562A4 /* controller */,
 				712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */,
 				712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */,
 				712BAF721B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld */,
