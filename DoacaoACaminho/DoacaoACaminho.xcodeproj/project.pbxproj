@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CBE653B1B4F14D60067B720 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */; };
 		1CF5E9301B0EF4FD00DD2BDE /* DACListaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */; };
 		1CF697E71B48F4FC00DBD17D /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */; };
 		712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF6D1B0E0FB4000E2E9E /* main.m */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
 		1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACListaTableViewController.m; sourceTree = "<group>"; };
 		1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableViewCell.h; sourceTree = "<group>"; };
 		1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				95FDEC541B0E2FF500F7817D /* ItemStore.m */,
 				1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */,
 				1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */,
+				1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */,
+				1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 				1CF5E9301B0EF4FD00DD2BDE /* DACListaTableViewController.m in Sources */,
 				95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */,
 				712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */,
+				1CBE653B1B4F14D60067B720 /* HistoryTableViewCell.m in Sources */,
 				712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -501,6 +508,7 @@
 				INFOPLIST_FILE = DoacaoACaminho/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -508,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
