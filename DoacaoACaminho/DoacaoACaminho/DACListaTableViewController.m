@@ -12,9 +12,6 @@
     NSMutableArray *selectedItems;
 }
 
-@property(readonly) NSArray *roupas;
-@property(readonly) NSArray *alimentos;
-
 @end
 
 @implementation DACListaTableViewController
@@ -63,12 +60,15 @@
  }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    ItemTableViewCell *cell = (ItemTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
     [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+    [selectedItems addObject:cell.identifier];
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+    ItemTableViewCell *cell = (ItemTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
+    [cell setAccessoryType:UITableViewCellAccessoryNone];
+    [selectedItems removeObject:cell.identifier];
 }
 
 #pragma mark - auxiliary mathods
@@ -90,12 +90,11 @@
 
 - (IBAction)continueDonation:(UIBarButtonItem *)sender {
     UITableView *tbView = (UITableView*)[[self view] viewWithTag:2];
-    NSArray *selected = [tbView indexPathsForSelectedRows];
-    ItemTableViewCell *cell;
-    for(NSIndexPath *iPath in selected) {
-        cell = (ItemTableViewCell*)[tbView cellForRowAtIndexPath:iPath];
-        [selectedItems addObject:cell.identifier];
-    }
+//    ItemTableViewCell *cell;
+//    for(NSIndexPath *iPath in selected) {
+//        cell = (ItemTableViewCell*)[tbView cellForRowAtIndexPath:iPath];
+//        [selectedItems addObject:cell.identifier];
+//    }
 }
 
 /*
