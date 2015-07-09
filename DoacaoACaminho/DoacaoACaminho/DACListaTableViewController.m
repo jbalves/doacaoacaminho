@@ -89,7 +89,7 @@
 #pragma mark - actions
 
 - (IBAction)continueDonation:(UIBarButtonItem *)sender {
-    UITableView *tbView = (UITableView*)[[self view] viewWithTag:2];
+//    UITableView *tbView = (UITableView*)[[self view] viewWithTag:2];
 //    ItemTableViewCell *cell;
 //    for(NSIndexPath *iPath in selected) {
 //        cell = (ItemTableViewCell*)[tbView cellForRowAtIndexPath:iPath];

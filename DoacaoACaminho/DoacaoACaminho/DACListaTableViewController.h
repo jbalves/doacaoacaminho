@@ -12,6 +12,4 @@
 
 @interface DACListaTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-- (NSArray*)selectedItems;
-
 @end
