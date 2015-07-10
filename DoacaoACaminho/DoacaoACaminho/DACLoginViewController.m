@@ -7,6 +7,8 @@
 //
 
 #import "DACLoginViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface DACLoginViewController ()
 
@@ -34,6 +36,10 @@
 //            // Show the errorString somewhere and let the user try again.
 //        }
 //    }];
+    
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.center = self.view.center;
+    [self.view addSubview:loginButton];
 }
 
 - (void)didReceiveMemoryWarning {
