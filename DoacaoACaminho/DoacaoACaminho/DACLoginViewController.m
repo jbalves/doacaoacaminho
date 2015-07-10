@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Jeferson Barros Alves. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DACLoginViewController.h"
 
-@interface ViewController ()
+@interface DACLoginViewController ()
 
 @end
 
-@implementation ViewController
+@implementation DACLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

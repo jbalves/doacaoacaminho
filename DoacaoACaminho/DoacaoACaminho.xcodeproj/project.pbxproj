@@ -12,7 +12,7 @@
 		712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF6D1B0E0FB4000E2E9E /* main.m */; };
 		712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF701B0E0FB4000E2E9E /* AppDelegate.m */; };
 		712BAF741B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF721B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld */; };
-		712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF761B0E0FB4000E2E9E /* ViewController.m */; };
+		712BAF771B0E0FB4000E2E9E /* DACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF761B0E0FB4000E2E9E /* DACLoginViewController.m */; };
 		712BAF7A1B0E0FB4000E2E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF781B0E0FB4000E2E9E /* Main.storyboard */; };
 		712BAF7C1B0E0FB4000E2E9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */; };
 		712BAF7F1B0E0FB4000E2E9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */; };
@@ -61,8 +61,8 @@
 		712BAF6F1B0E0FB4000E2E9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		712BAF701B0E0FB4000E2E9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		712BAF731B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoacaoACaminho.xcdatamodel; sourceTree = "<group>"; };
-		712BAF751B0E0FB4000E2E9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		712BAF761B0E0FB4000E2E9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		712BAF751B0E0FB4000E2E9E /* DACLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DACLoginViewController.h; sourceTree = "<group>"; };
+		712BAF761B0E0FB4000E2E9E /* DACLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DACLoginViewController.m; sourceTree = "<group>"; };
 		712BAF791B0E0FB4000E2E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		712BAF7E1B0E0FB4000E2E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -156,8 +156,8 @@
 		1C13A1F61B49B5D9000562A4 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				712BAF751B0E0FB4000E2E9E /* ViewController.h */,
-				712BAF761B0E0FB4000E2E9E /* ViewController.m */,
+				712BAF751B0E0FB4000E2E9E /* DACLoginViewController.h */,
+				712BAF761B0E0FB4000E2E9E /* DACLoginViewController.m */,
 				95FDEC511B0E2FF500F7817D /* DACListaTableViewController.h */,
 				1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */,
 				79012CB51B0E177900531F7D /* MapaViewController.h */,
@@ -367,7 +367,7 @@
 				712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */,
 				1CF5E9301B0EF4FD00DD2BDE /* DACListaTableViewController.m in Sources */,
 				95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */,
-				712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */,
+				712BAF771B0E0FB4000E2E9E /* DACLoginViewController.m in Sources */,
 				712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
