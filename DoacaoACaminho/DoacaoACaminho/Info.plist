@@ -19,6 +19,9 @@
 	<string>358556394348849</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>Location is required to find out where you are</string>
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
