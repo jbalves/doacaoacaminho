@@ -33,10 +33,10 @@
 }
 
 - (NSArray *)getAllUserDonations {
-    PFUser *user = [PFQuery getUserObjectWithId:@"CvOkJ1SXJE"];
+//    PFUser *user = [PFQuery getUserObjectWithId:@"CvOkJ1SXJE"];
     
     PFQuery *donationQuery = [PFQuery queryWithClassName:@"Donation"];
-    [donationQuery whereKey:@"user" equalTo:user];
+    [donationQuery whereKey:@"user" equalTo:[PFUser currentUser]];
     
     NSArray *allDonations = NULL;
     NSError *error;
@@ -69,6 +69,12 @@
         [donationsInfo addObject:retrievedData];
         NSLog(@"%@", retrievedData);
     }
+    
+    donations = NULL;
+    dateFormat = NULL;
+    creationDate = NULL;
+    institution = NULL;
+
     return donationsInfo;
 }
 
