@@ -8,6 +8,7 @@
 
 #import <Parse/Parse.h>
 #import "HistoryStore.h"
+#import "InstitutionStore.h"
 
 @interface HistoryStore()
 
@@ -31,18 +32,44 @@
     return sharedStore;
 }
 
-- (NSArray *)getAllUserHistory; {
-    PFQuery *donationQuery = [PFQuery queryWithClassName:@"Donation"];
-    [donationQuery whereKey:@"user" equalTo:[PFUser currentUser].objectId];
+- (NSArray *)getAllUserDonations {
+    PFUser *user = [PFQuery getUserObjectWithId:@"CvOkJ1SXJE"];
     
-    NSArray *allDonations;
+    PFQuery *donationQuery = [PFQuery queryWithClassName:@"Donation"];
+    [donationQuery whereKey:@"user" equalTo:user];
+    
+    NSArray *allDonations = NULL;
     NSError *error;
     
     allDonations = [donationQuery findObjects:&error];
     if (error)
         NSLog(@"Error in DataBase operation: %@ %@", error, [error userInfo]);
+    NSLog(@"%ld", allDonations.count);
     
     return allDonations;
+}
+
+- (NSArray*)getUserDonationInfo {
+    NSMutableArray *donationsInfo = [[NSMutableArray alloc] init];
+    
+    NSObject *institution;
+    NSDate *creationDate;
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"dd/MM/yyyy"];
+    
+    NSArray *donations = [self getAllUserDonations];
+    for(NSObject *obj in donations) {
+        NSLog(@"donationId: %@", [obj valueForKey:@"objectId"]);
+        institution = [[InstitutionStore sharedStore] getInstitutionById:[[obj valueForKey:@"institution"] valueForKey:@"objectId"]];
+        creationDate = (NSDate*)[obj valueForKey:@"createdAt"];
+        NSDictionary *retrievedData = [[NSDictionary alloc] initWithObjectsAndKeys:[obj valueForKey:@"objectId"], @"donationId",
+                                       [dateFormat stringFromDate:creationDate], @"donationDate",
+                                       [institution valueForKey:@"name"], @"institutionName", nil];
+        
+        [donationsInfo addObject:retrievedData];
+        NSLog(@"%@", retrievedData);
+    }
+    return donationsInfo;
 }
 
 @end

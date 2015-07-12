@@ -1,5 +1,5 @@
 //
-//  HistoryStore.h
+//  InsitutionStore.h
 //  DoacaoACaminho
 //
 //  Created by Patrick Magalhães de Lima on 09/07/15.
@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HistoryStore : NSObject
+@interface InstitutionStore : NSObject
 
-+ (instancetype) sharedStore;
-- (NSArray *)getAllUserDonations;
-- (NSArray *)getUserDonationInfo;
++ (instancetype)sharedStore;
+- (NSArray*)getAllInstitutions;
+- (NSObject*)getInstitutionById:(NSString*)institutionId;
 
 @end

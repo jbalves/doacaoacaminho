@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cPJ-qT-2qa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="2670.5" y="691.5"/>
         </scene>
-        <!--View Controller-->
+        <!--History View Controller-->
         <scene sceneID="Y37-Mo-FXc">
             <objects>
-                <viewController id="2mj-0W-LBr" sceneMemberID="viewController">
+                <viewController id="2mj-0W-LBr" customClass="DACHistoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mZg-dd-eIp"/>
                         <viewControllerLayoutGuide type="bottom" id="oZS-5h-ARV"/>
@@ -112,6 +112,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="date" destination="TRL-3Z-obS" id="AMD-eg-bcq"/>
                                             <outlet property="imgViewInstitution" destination="TQu-pR-J5O" id="97y-pv-K8x"/>
@@ -119,6 +120,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2mj-0W-LBr" id="igk-3R-TV2"/>
+                                    <outlet property="delegate" destination="2mj-0W-LBr" id="rGJ-WV-OKr"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

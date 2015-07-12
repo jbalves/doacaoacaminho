@@ -10,6 +10,7 @@
 		1CBE653B1B4F14D60067B720 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */; };
 		1CBE653E1B4F17A30067B720 /* DACHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE653D1B4F17A30067B720 /* DACHistoryViewController.m */; };
 		1CBE65411B4F186F0067B720 /* HistoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE65401B4F186F0067B720 /* HistoryStore.m */; };
+		1CBE65441B4F2EDD0067B720 /* InstitutionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */; };
 		1CF5E9301B0EF4FD00DD2BDE /* DACListaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */; };
 		1CF697E71B48F4FC00DBD17D /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */; };
 		712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF6D1B0E0FB4000E2E9E /* main.m */; };
@@ -61,6 +62,8 @@
 		1CBE653D1B4F17A30067B720 /* DACHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACHistoryViewController.m; sourceTree = "<group>"; };
 		1CBE653F1B4F186F0067B720 /* HistoryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryStore.h; sourceTree = "<group>"; };
 		1CBE65401B4F186F0067B720 /* HistoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryStore.m; sourceTree = "<group>"; };
+		1CBE65421B4F2EDD0067B720 /* InstitutionStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstitutionStore.h; sourceTree = "<group>"; };
+		1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstitutionStore.m; sourceTree = "<group>"; };
 		1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACListaTableViewController.m; sourceTree = "<group>"; };
 		1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableViewCell.h; sourceTree = "<group>"; };
 		1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 				1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */,
 				1CBE653F1B4F186F0067B720 /* HistoryStore.h */,
 				1CBE65401B4F186F0067B720 /* HistoryStore.m */,
+				1CBE65421B4F2EDD0067B720 /* InstitutionStore.h */,
+				1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 				1CBE65411B4F186F0067B720 /* HistoryStore.m in Sources */,
 				712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */,
 				1CF5E9301B0EF4FD00DD2BDE /* DACListaTableViewController.m in Sources */,
+				1CBE65441B4F2EDD0067B720 /* InstitutionStore.m in Sources */,
 				95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */,
 				1CBE653E1B4F17A30067B720 /* DACHistoryViewController.m in Sources */,
 				712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */,
