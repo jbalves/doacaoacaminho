@@ -33,10 +33,14 @@
 }
 
 - (NSArray *)getAllUserDonations {
-//    PFUser *user = [PFQuery getUserObjectWithId:@"CvOkJ1SXJE"];
-    
     PFQuery *donationQuery = [PFQuery queryWithClassName:@"Donation"];
-    [donationQuery whereKey:@"user" equalTo:[PFUser currentUser]];
+    /** quando o login estiver pronto, descomentar a linha abaixo e comentar as
+        próximas duas linhas de código
+     **/
+//    [donationQuery whereKey:@"user" equalTo:[PFUser currentUser]];
+    
+    PFUser *user = [PFQuery getUserObjectWithId:@"CvOkJ1SXJE"];
+    [donationQuery whereKey:@"user" equalTo:user];
     
     NSArray *allDonations = NULL;
     NSError *error;
