@@ -182,9 +182,12 @@
                                     <outlet property="delegate" destination="Qbz-B2-VmK" id="yie-3b-cKe"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2Z-Fz-WVF">
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w5N-E3-3uP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Qbz-B2-VmK" id="YF1-KF-HPC"/>
+                                </connections>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -196,8 +199,20 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="eTA-pY-d8U" id="qQx-Hq-KHj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1o-qp-eKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="eTA-pY-d8U">
+                    <connections>
+                        <outlet property="delegate" destination="Qbz-B2-VmK" id="xJd-6A-mhn"/>
+                        <outlet property="searchBar" destination="w5N-E3-3uP" id="gjC-WX-EkS"/>
+                        <outlet property="searchContentsController" destination="Qbz-B2-VmK" id="PR6-xZ-68g"/>
+                        <outlet property="searchResultsDataSource" destination="Qbz-B2-VmK" id="PSb-hB-wjD"/>
+                        <outlet property="searchResultsDelegate" destination="Qbz-B2-VmK" id="Vrg-3C-Fzr"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="4241" y="-24"/>
         </scene>
