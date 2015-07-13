@@ -12,5 +12,6 @@
 @interface DACDonationDetailViewController : UIViewController
 
 @property (nonatomic, strong) PFObject *donation;
+@property (nonatomic, strong) NSObject *institution;
 
 @end

@@ -49,8 +49,10 @@
     if(iPath == NULL)
         return ;
     
+    [_tbViewHistory deselectRowAtIndexPath:iPath animated:NO];
     DACDonationDetailViewController *destination = (DACDonationDetailViewController*)segue.destinationViewController;
     destination.donation = (PFObject*)[donations[iPath.row] valueForKey:@"donationObject"];
+    destination.institution = [donations[iPath.row] valueForKey:@"institutionObject"];
 }
 
 @end

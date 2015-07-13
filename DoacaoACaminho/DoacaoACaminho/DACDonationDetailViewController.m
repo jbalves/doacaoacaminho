@@ -30,7 +30,14 @@
         NSLog(@"passou");
     }
     donatedItems = [[NSArray alloc] initWithArray:[[DonationStore sharedStore] getDonationItemsByDonation:_donation]];
+    [self setInstitutionInformations];
     // Do any additional setup after loading the view.
+}
+
+- (void)setInstitutionInformations {
+    _lblInstitutionName.text = [_institution valueForKey:@"name"];
+    _lblInstitutionAddress.text = [NSString stringWithFormat:@"%@, %@, %@", [_institution valueForKey:@"street"], [_institution valueForKey:@"number"], [_institution valueForKey:@"postalCode"]];
+    [_sgmControlDonationStatus setSelectedSegmentIndex:[[_donation valueForKey:@"delivered"] boolValue] ? 1:0];
 }
 
 - (void)didReceiveMemoryWarning {
