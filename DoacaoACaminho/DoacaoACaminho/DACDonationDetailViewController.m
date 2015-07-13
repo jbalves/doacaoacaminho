@@ -8,7 +8,8 @@
 
 #import "DACDonationDetailViewController.h"
 
-@interface DACDonationDetailViewController ()
+@interface DACDonationDetailViewController () <UITableViewDataSource, UITableViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UIImageView *imgInstitution;
 @property (weak, nonatomic) IBOutlet UILabel *lblInstitutionName;
 @property (weak, nonatomic) IBOutlet UILabel *lblInstitutionAddress;
@@ -28,6 +29,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell;
+    return cell;
 }
 
 /*

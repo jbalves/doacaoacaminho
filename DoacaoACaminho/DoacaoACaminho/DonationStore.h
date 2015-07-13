@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HistoryStore : NSObject
+@interface DonationStore : NSObject
 
 + (instancetype) sharedStore;
 - (NSArray *)getAllUserDonations;
 - (NSArray *)getUserDonationInfo;
+- (NSArray*)getDonationItemsByDonation:(PFObject*)donation;
 
 @end

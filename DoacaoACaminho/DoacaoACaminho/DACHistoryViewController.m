@@ -7,12 +7,13 @@
 //
 
 #import "DACHistoryViewController.h"
-#import "HistoryStore.h"
+#import "DonationStore.h"
 #import "HistoryTableViewCell.h"
 
 @interface DACHistoryViewController() <UITableViewDataSource, UITableViewDelegate> {
     NSArray *donations;
 }
+@property (weak, nonatomic) IBOutlet UITableView *tbViewHistory;
 
 @end
 
@@ -20,7 +21,7 @@
 
 - (void)viewDidLoad {
     donations = [[NSArray alloc] init];
-    donations = [[HistoryStore sharedStore] getUserDonationInfo];
+    donations = [[DonationStore sharedStore] getUserDonationInfo];
     NSLog(@"%ld", donations.count);
 }
 
@@ -39,6 +40,10 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100.0f;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
 }
 
 @end

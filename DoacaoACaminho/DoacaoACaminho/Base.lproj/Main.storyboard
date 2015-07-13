@@ -137,6 +137,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tbViewHistory" destination="bak-EO-lw0" id="7Pk-et-dKd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVh-EK-CtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

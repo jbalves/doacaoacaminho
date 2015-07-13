@@ -7,14 +7,14 @@
 //
 
 #import <Parse/Parse.h>
-#import "HistoryStore.h"
+#import "DonationStore.h"
 #import "InstitutionStore.h"
 
-@interface HistoryStore()
+@interface DonationStore()
 
 @end
 
-@implementation HistoryStore
+@implementation DonationStore
 
 - (instancetype)init {
     @throw [NSException exceptionWithName:@"Could not access instance. Use [HistoryStore sharedStore]" reason:@"This is a singleton class" userInfo:nil];
@@ -25,7 +25,7 @@
 }
 
 + (instancetype)sharedStore {
-    static HistoryStore *sharedStore;
+    static DonationStore *sharedStore;
     if(!sharedStore) {
         sharedStore = [[self alloc] initPrivate];
     }
@@ -66,7 +66,7 @@
         NSLog(@"donationId: %@", [obj valueForKey:@"objectId"]);
         institution = [[InstitutionStore sharedStore] getInstitutionById:[[obj valueForKey:@"institution"] valueForKey:@"objectId"]];
         creationDate = (NSDate*)[obj valueForKey:@"createdAt"];
-        NSDictionary *retrievedData = [[NSDictionary alloc] initWithObjectsAndKeys:[obj valueForKey:@"objectId"], @"donationId",
+        NSDictionary *retrievedData = [[NSDictionary alloc] initWithObjectsAndKeys:obj, @"donationObject",
                                        [dateFormat stringFromDate:creationDate], @"donationDate",
                                        [institution valueForKey:@"name"], @"institutionName", nil];
         
@@ -80,6 +80,20 @@
     institution = NULL;
 
     return donationsInfo;
+}
+
+- (NSArray*)getDonationItemsByDonation:(PFObject*)donation {
+    PFRelation *itemsRelation = [donation relationForKey:@"items"];
+    
+    PFQuery *itemsQuery = [itemsRelation query];
+    
+    NSError *error;
+    NSArray *results = [itemsQuery findObjects:&error];
+    
+    if (error)
+        NSLog(@"Error in DataBase operation: %@ %@", error, [error userInfo]);
+    
+    return results;
 }
 
 @end

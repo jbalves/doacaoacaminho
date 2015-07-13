@@ -52,7 +52,6 @@
         return NULL;
         
     return results[0];
-    
 }
 
 @end
