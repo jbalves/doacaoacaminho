@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C1AC4E71B543A67005F7722 /* DACDonationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AC4E61B543A67005F7722 /* DACDonationDetailViewController.m */; };
+		1C6836731B547DC70010231A /* DACInstitutionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6836721B547DC70010231A /* DACInstitutionListViewController.m */; };
 		1CBE653B1B4F14D60067B720 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */; };
 		1CBE653E1B4F17A30067B720 /* DACHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE653D1B4F17A30067B720 /* DACHistoryViewController.m */; };
 		1CBE65411B4F186F0067B720 /* DonationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE65401B4F186F0067B720 /* DonationStore.m */; };
@@ -59,6 +60,8 @@
 /* Begin PBXFileReference section */
 		1C1AC4E51B543A67005F7722 /* DACDonationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACDonationDetailViewController.h; sourceTree = "<group>"; };
 		1C1AC4E61B543A67005F7722 /* DACDonationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACDonationDetailViewController.m; sourceTree = "<group>"; };
+		1C6836711B547DC70010231A /* DACInstitutionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACInstitutionListViewController.h; sourceTree = "<group>"; };
+		1C6836721B547DC70010231A /* DACInstitutionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACInstitutionListViewController.m; sourceTree = "<group>"; };
 		1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
 		1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
 		1CBE653C1B4F17A30067B720 /* DACHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACHistoryViewController.h; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */,
 				79012CB51B0E177900531F7D /* MapaViewController.h */,
 				79012CB61B0E177900531F7D /* MapaViewController.m */,
+				1C6836711B547DC70010231A /* DACInstitutionListViewController.h */,
+				1C6836721B547DC70010231A /* DACInstitutionListViewController.m */,
 				79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */,
 				79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */,
 				1CBE653C1B4F17A30067B720 /* DACHistoryViewController.h */,
@@ -394,6 +399,7 @@
 				1CF5E9301B0EF4FD00DD2BDE /* DACListaTableViewController.m in Sources */,
 				1CBE65441B4F2EDD0067B720 /* InstitutionStore.m in Sources */,
 				95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */,
+				1C6836731B547DC70010231A /* DACInstitutionListViewController.m in Sources */,
 				1CBE653E1B4F17A30067B720 /* DACHistoryViewController.m in Sources */,
 				712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */,
 				1CBE653B1B4F14D60067B720 /* HistoryTableViewCell.m in Sources */,

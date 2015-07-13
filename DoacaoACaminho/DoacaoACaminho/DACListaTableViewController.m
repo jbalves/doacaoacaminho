@@ -31,7 +31,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark - Table view data source and delegate implementation
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     PFQuery *categoryQuery = [PFQuery queryWithClassName:@"Item_Category"];

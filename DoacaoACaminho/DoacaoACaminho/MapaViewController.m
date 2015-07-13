@@ -7,6 +7,7 @@
 //
 
 #import "MapaViewController.h"
+#import "DACInstitutionListViewController.h"
 #import "InstitutionStore.h"
 
 @interface MapaViewController () {
@@ -327,13 +328,12 @@
     //Educandario Gustavo Capanema
     NSString *string13 = @"http://maps.apple.com/maps?daddr=-3.148717,-60.002632";
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string13]];
+}
 
-
-
-
-
-
-
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.destinationViewController isKindOfClass:[DACInstitutionListViewController class]]) {
+        DACInstitutionListViewController *dest = (DACInstitutionListViewController*)segue.destinationViewController;
+        dest.institutions = institutions;
+    }
 }
 @end
