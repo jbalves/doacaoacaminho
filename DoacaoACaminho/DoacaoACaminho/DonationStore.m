@@ -82,8 +82,8 @@
     return donationsInfo;
 }
 
-- (NSArray*)getDonationItemsByDonation:(PFObject*)donation {
-    PFRelation *itemsRelation = [donation relationForKey:@"items"];
+- (NSArray*)getDonationItemsByDonation:(NSObject*)donation {
+    PFRelation *itemsRelation = [(PFObject*)donation relationForKey:@"items"];
     
     PFQuery *itemsQuery = [itemsRelation query];
     

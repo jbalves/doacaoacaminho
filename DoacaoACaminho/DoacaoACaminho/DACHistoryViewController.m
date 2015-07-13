@@ -9,6 +9,7 @@
 #import "DACHistoryViewController.h"
 #import "DonationStore.h"
 #import "HistoryTableViewCell.h"
+#import "DACDonationDetailViewController.h"
 
 @interface DACHistoryViewController() <UITableViewDataSource, UITableViewDelegate> {
     NSArray *donations;
@@ -34,6 +35,7 @@
     NSDictionary *donationInfo = (NSDictionary*)[donations objectAtIndex:indexPath.row];
     cell.institution.text = [donationInfo objectForKey:@"institutionName"];
     cell.date.text = [donationInfo objectForKey:@"donationDate"];
+    cell.donation = [donationInfo objectForKey:@"donationObject"];
     
     return cell;
 }
@@ -43,7 +45,12 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *iPath = [_tbViewHistory indexPathForSelectedRow];
+    if(iPath == NULL)
+        return ;
     
+    DACDonationDetailViewController *destination = (DACDonationDetailViewController*)segue.destinationViewController;
+    destination.donation = (PFObject*)[donations[iPath.row] valueForKey:@"donationObject"];
 }
 
 @end

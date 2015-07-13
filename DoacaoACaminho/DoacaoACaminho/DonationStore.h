@@ -13,6 +13,6 @@
 + (instancetype) sharedStore;
 - (NSArray *)getAllUserDonations;
 - (NSArray *)getUserDonationInfo;
-- (NSArray*)getDonationItemsByDonation:(PFObject*)donation;
+- (NSArray*)getDonationItemsByDonation:(NSObject*)donation;
 
 @end

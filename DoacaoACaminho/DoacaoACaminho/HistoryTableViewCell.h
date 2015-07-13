@@ -10,7 +10,7 @@
 
 @interface HistoryTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) NSString *identifier;
+@property (nonatomic, strong) NSObject *donation;
 @property (weak, nonatomic) IBOutlet UILabel *institution;
 @property (weak, nonatomic) IBOutlet UILabel *date;
 @property (weak, nonatomic) IBOutlet UIImageView *imgViewInstitution;

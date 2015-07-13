@@ -23,6 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if(_donation != NULL) {
+        NSLog(@"passou");
+    }
     // Do any additional setup after loading the view.
 }
 
