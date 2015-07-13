@@ -68,7 +68,8 @@
         creationDate = (NSDate*)[obj valueForKey:@"createdAt"];
         NSDictionary *retrievedData = [[NSDictionary alloc] initWithObjectsAndKeys:obj, @"donationObject",
                                        [dateFormat stringFromDate:creationDate], @"donationDate",
-                                       [institution valueForKey:@"name"], @"institutionName", nil];
+                                       [institution valueForKey:@"name"], @"institutionName",
+                                       institution, @"institutionObject", nil];
         
         [donationsInfo addObject:retrievedData];
         NSLog(@"%@", retrievedData);

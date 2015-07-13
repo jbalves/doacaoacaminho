@@ -7,8 +7,11 @@
 //
 
 #import "DACDonationDetailViewController.h"
+#import "DonationStore.h"
 
-@interface DACDonationDetailViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface DACDonationDetailViewController () <UITableViewDataSource, UITableViewDelegate> {
+    NSArray *donatedItems;
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgInstitution;
 @property (weak, nonatomic) IBOutlet UILabel *lblInstitutionName;
@@ -26,6 +29,7 @@
     if(_donation != NULL) {
         NSLog(@"passou");
     }
+    donatedItems = [[NSArray alloc] initWithArray:[[DonationStore sharedStore] getDonationItemsByDonation:_donation]];
     // Do any additional setup after loading the view.
 }
 
@@ -35,11 +39,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return [donatedItems count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"Itens Doados";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ItemDetailCell" forIndexPath:indexPath];
+    cell.textLabel.text = (NSString*)[[donatedItems objectAtIndex:indexPath.row] valueForKey:@"name"];
     return cell;
 }
 
