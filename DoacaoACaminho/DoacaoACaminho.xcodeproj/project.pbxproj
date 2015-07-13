@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1AC4E71B543A67005F7722 /* DACDonationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AC4E61B543A67005F7722 /* DACDonationDetailViewController.m */; };
 		1CBE653B1B4F14D60067B720 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */; };
 		1CBE653E1B4F17A30067B720 /* DACHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE653D1B4F17A30067B720 /* DACHistoryViewController.m */; };
 		1CBE65411B4F186F0067B720 /* HistoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE65401B4F186F0067B720 /* HistoryStore.m */; };
@@ -56,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C1AC4E51B543A67005F7722 /* DACDonationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACDonationDetailViewController.h; sourceTree = "<group>"; };
+		1C1AC4E61B543A67005F7722 /* DACDonationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACDonationDetailViewController.m; sourceTree = "<group>"; };
 		1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
 		1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
 		1CBE653C1B4F17A30067B720 /* DACHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACHistoryViewController.h; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */,
 				1CBE653C1B4F17A30067B720 /* DACHistoryViewController.h */,
 				1CBE653D1B4F17A30067B720 /* DACHistoryViewController.m */,
+				1C1AC4E51B543A67005F7722 /* DACDonationDetailViewController.h */,
+				1C1AC4E61B543A67005F7722 /* DACDonationDetailViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 				1CBE653E1B4F17A30067B720 /* DACHistoryViewController.m in Sources */,
 				712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */,
 				1CBE653B1B4F14D60067B720 /* HistoryTableViewCell.m in Sources */,
+				1C1AC4E71B543A67005F7722 /* DACDonationDetailViewController.m in Sources */,
 				712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
