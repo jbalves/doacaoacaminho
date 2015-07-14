@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fk4-20-neP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fk4-20-neP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="1192" y="307"/>
         </scene>
-        <!--Item 2-->
+        <!--Instituições-->
         <scene sceneID="QlO-le-gFR">
             <objects>
-                <viewController id="Gsn-ay-08U" customClass="MapaViewController" sceneMemberID="viewController">
+                <viewController title="Instituições" id="Gsn-ay-08U" customClass="MapaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fLM-IQ-9jf"/>
                         <viewControllerLayoutGuide type="bottom" id="2eP-vv-cVH"/>
@@ -72,7 +72,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="l7Z-2F-bE9"/>
+                    <tabBarItem key="tabBarItem" title="item 2" id="l7Z-2F-bE9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="map" destination="bmu-6q-IX3" id="cnV-uP-NpL"/>
@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="2670.5" y="691.5"/>
         </scene>
-        <!--Institution List View Controller-->
+        <!--Instituições-->
         <scene sceneID="iJK-5x-19p">
             <objects>
-                <viewController id="XAg-QI-hyG" customClass="DACInstitutionListViewController" sceneMemberID="viewController">
+                <viewController title="Instituições" id="XAg-QI-hyG" customClass="DACInstitutionListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RV6-ZC-JJU"/>
                         <viewControllerLayoutGuide type="bottom" id="TV6-cb-jNc"/>
@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="3204.5" y="657.5"/>
         </scene>
-        <!--History View Controller-->
+        <!--Histórico-->
         <scene sceneID="Y37-Mo-FXc">
             <objects>
-                <viewController id="2mj-0W-LBr" customClass="DACHistoryViewController" sceneMemberID="viewController">
+                <viewController title="Histórico" id="2mj-0W-LBr" customClass="DACHistoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mZg-dd-eIp"/>
                         <viewControllerLayoutGuide type="bottom" id="oZS-5h-ARV"/>
@@ -228,10 +228,10 @@
             </objects>
             <point key="canvasLocation" x="3585.5" y="-46.5"/>
         </scene>
-        <!--Donation Detail View Controller-->
+        <!--Sua doação-->
         <scene sceneID="Wnx-sM-r4e">
             <objects>
-                <viewController id="LbK-98-odx" customClass="DACDonationDetailViewController" sceneMemberID="viewController">
+                <viewController title="Sua doação" id="LbK-98-odx" customClass="DACDonationDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2ha-fp-Pif"/>
                         <viewControllerLayoutGuide type="bottom" id="jCe-bI-uUC"/>
@@ -315,10 +315,10 @@
             </objects>
             <point key="canvasLocation" x="3585.5" y="-783.5"/>
         </scene>
-        <!--Lista Table View Controller-->
+        <!--Doação-->
         <scene sceneID="Og7-eM-Zw2">
             <objects>
-                <viewController id="Qbz-B2-VmK" customClass="DACListaTableViewController" sceneMemberID="viewController">
+                <viewController title="Doação" id="Qbz-B2-VmK" customClass="DACListaTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jua-GO-W8y"/>
                         <viewControllerLayoutGuide type="bottom" id="dcs-KE-SCE"/>
@@ -468,11 +468,11 @@
             </objects>
             <point key="canvasLocation" x="252" y="300"/>
         </scene>
-        <!--Item 1-->
+        <!--item 1-->
         <scene sceneID="bpU-li-XOY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wYV-qi-a46" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="u6m-iV-q6V"/>
+                    <tabBarItem key="tabBarItem" title="item 1" id="u6m-iV-q6V"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpP-FC-wu6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
