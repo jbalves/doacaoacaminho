@@ -12,11 +12,11 @@
 		</dict>
 	</array>
 	<key>FacebookDisplayName</key>
-	<string>DoacaoACaminho</string>
+	<string>iCaring</string>
 	<key>FacebookAppID</key>
 	<string>358556394348849</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Location is required to find out where you are</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is required to find out where you are</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDocumentTypes</key>
