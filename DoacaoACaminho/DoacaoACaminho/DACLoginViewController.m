@@ -30,11 +30,12 @@
 }
 
 -(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error {
+    
     if ([FBSDKAccessToken currentAccessToken]) {
-        NSLog(@"Usuário está logado");
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        DACHistoryViewController *ci = [storyboard instantiateViewControllerWithIdentifier:@"historyView"];
-        [self presentViewController:ci animated:YES completion:nil];
+        DACHistoryViewController *historyVC = [storyboard instantiateViewControllerWithIdentifier:@"historyView"];
+        [self.navigationController setViewControllers:@[historyVC]];
+//        [self presentViewController:ci animated:YES completion:nil];
     }
     
 }

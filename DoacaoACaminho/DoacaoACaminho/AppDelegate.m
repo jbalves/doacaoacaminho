@@ -10,6 +10,8 @@
 #import <Parse/Parse.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "DACHistoryViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -22,6 +24,7 @@
     // Override point for customization after application launch.
     [Parse setApplicationId:@"hvnIoSFbTTNV2dlp2hNroqX6zFe72eiREyheqrYi"
                   clientKey:@"idoZRMFGCwOQT5wuL3tb9d9HWt8T5XpvQLSIoSTd"];
+    
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
 }

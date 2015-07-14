@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     donations = [[NSArray alloc] init];
     donations = [[DonationStore sharedStore] getUserDonationInfo];
-    NSLog(@"%ld", donations.count);
+    NSLog(@"%ld", (unsigned long)donations.count);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
