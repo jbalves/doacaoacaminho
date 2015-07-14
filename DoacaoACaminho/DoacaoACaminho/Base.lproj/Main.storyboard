@@ -94,13 +94,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gd0-wj-Sn5">
-                                <rect key="frame" x="0.0" y="20" width="329" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="XAg-QI-hyG" id="YCa-ZD-UTM"/>
-                                </connections>
-                            </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urH-vF-O3D">
                                 <rect key="frame" x="329" y="20" width="46" height="44"/>
                                 <state key="normal" title="M">
@@ -135,22 +128,38 @@
                                     <outlet property="delegate" destination="XAg-QI-hyG" id="ieh-Kf-Teg"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aZ0-ha-5Kr">
+                                <rect key="frame" x="0.0" y="20" width="327" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="XAg-QI-hyG" id="moa-Jp-N49"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="LCJ-7t-Xar" id="4oB-wH-1Zt"/>
+                        <outlet property="searchDisplayController" destination="ajV-Yz-Qbm" id="WEW-5p-IIA"/>
+                        <outlet property="tableView" destination="Iui-O9-BSY" id="A2w-7Y-rsk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3q-oR-C8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="LCJ-7t-Xar">
                     <connections>
                         <outlet property="delegate" destination="XAg-QI-hyG" id="IT7-UH-QwD"/>
-                        <outlet property="searchBar" destination="Gd0-wj-Sn5" id="a8a-uh-Jfg"/>
                         <outlet property="searchContentsController" destination="XAg-QI-hyG" id="fm7-17-4Is"/>
                         <outlet property="searchResultsDataSource" destination="XAg-QI-hyG" id="qxq-k9-wjK"/>
                         <outlet property="searchResultsDelegate" destination="XAg-QI-hyG" id="Qqu-Ci-iTu"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="ajV-Yz-Qbm">
+                    <connections>
+                        <outlet property="delegate" destination="XAg-QI-hyG" id="u10-2d-0oa"/>
+                        <outlet property="searchBar" destination="aZ0-ha-5Kr" id="C3P-Jf-U2n"/>
+                        <outlet property="searchContentsController" destination="XAg-QI-hyG" id="Zav-ET-VLV"/>
+                        <outlet property="searchResultsDataSource" destination="XAg-QI-hyG" id="XXl-AP-GzT"/>
+                        <outlet property="searchResultsDelegate" destination="XAg-QI-hyG" id="6yx-hn-WHw"/>
                     </connections>
                 </searchDisplayController>
             </objects>
@@ -425,7 +434,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="thk-av-K8g"/>
+                    <navigationItem key="navigationItem" id="thk-av-K8g">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="fwe-Zc-pwV"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZS-TU-nwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
