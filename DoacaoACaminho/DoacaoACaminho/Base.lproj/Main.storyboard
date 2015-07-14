@@ -154,7 +154,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="3204.5" y="657.5"/>
+            <point key="canvasLocation" x="3232.5" y="691.5"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="Y37-Mo-FXc">
@@ -425,11 +425,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="thk-av-K8g"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZS-TU-nwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2670.5" y="1437.5"/>
+            <point key="canvasLocation" x="3482.5" y="1437.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="U0O-E4-RGe">
@@ -486,6 +487,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqB-cO-Xeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2728" y="-24"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="81w-IK-Z8U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mpm-BI-3UM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PTq-c7-TNU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LoQ-DZ-fcR" kind="relationship" relationship="rootViewController" id="toW-aT-Xd1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kM2-8K-T9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2670" y="1437"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
