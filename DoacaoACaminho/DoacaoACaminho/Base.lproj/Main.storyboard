@@ -159,7 +159,7 @@
         <!--History View Controller-->
         <scene sceneID="Y37-Mo-FXc">
             <objects>
-                <viewController storyboardIdentifier="historyView" id="2mj-0W-LBr" customClass="DACHistoryViewController" sceneMemberID="viewController">
+                <viewController id="2mj-0W-LBr" customClass="DACHistoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mZg-dd-eIp"/>
                         <viewControllerLayoutGuide type="bottom" id="oZS-5h-ARV"/>
@@ -434,7 +434,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="U0O-E4-RGe">
             <objects>
-                <tabBarController id="cPJ-qT-2qa" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTabBar" id="cPJ-qT-2qa" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Dwm-wb-OWM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -489,6 +489,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rgP-iw-L5k"/>
+        <segue reference="aOy-UN-dJ1"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    if([FBSDKAccessToken currentAccessToken]) {
+        [self segueForInitialView];
+        return ;
+    }
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     loginButton.center = self.view.center;
     loginButton.delegate = self;
@@ -32,12 +35,15 @@
 -(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error {
     
     if ([FBSDKAccessToken currentAccessToken]) {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        DACHistoryViewController *historyVC = [storyboard instantiateViewControllerWithIdentifier:@"historyView"];
-        [self.navigationController setViewControllers:@[historyVC]];
-//        [self presentViewController:ci animated:YES completion:nil];
+        [self segueForInitialView];
     }
     
+}
+
+- (void)segueForInitialView {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UITabBarController *tbController = [storyboard instantiateViewControllerWithIdentifier:@"mainTabBar"];
+    [self presentViewController:tbController animated:YES completion:NULL];
 }
 
 -(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton {
