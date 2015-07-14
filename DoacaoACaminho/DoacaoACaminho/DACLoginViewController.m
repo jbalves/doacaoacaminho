@@ -7,39 +7,21 @@
 //
 
 #import "DACLoginViewController.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface DACLoginViewController ()
 
 @end
 
-@implementation DACLoginViewController
+@implementation DACLoginViewController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-//    PFUser *user = [PFUser user];
-//    user.username = @"usuario";
-//    user.password = @"usuario";
-//    user.email = @"usuario@example.com";
-//    
-//    // other fields can be set if you want to save more information
-//    user[@"phone"] = @"650-555-0000";
-//    
-//    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-//        if (!error) {
-//            // Hooray! Let them use the app now.
-//        } else {
-//            NSString *errorString = [error userInfo][@"error"];
-//            // Show the errorString somewhere and let the user try again.
-//        }
-//    }];
     
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     loginButton.center = self.view.center;
+    loginButton.delegate = self;
     [self.view addSubview:loginButton];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,4 +29,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error {
+    if ([FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"Usuário está logado");
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        DACListaTableViewController *ci = [storyboard instantiateViewControllerWithIdentifier:@"listaTableView"];
+        [self presentViewController:ci animated:YES completion:nil];
+    }
+    
+}
+
+-(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton {
+    
+}
 @end

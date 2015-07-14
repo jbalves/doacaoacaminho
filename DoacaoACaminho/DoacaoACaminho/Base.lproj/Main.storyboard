@@ -95,7 +95,7 @@
         <!--Lista Table View Controller-->
         <scene sceneID="Og7-eM-Zw2">
             <objects>
-                <viewController id="Qbz-B2-VmK" customClass="DACListaTableViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="listaTableView" id="Qbz-B2-VmK" customClass="DACListaTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jua-GO-W8y"/>
                         <viewControllerLayoutGuide type="bottom" id="dcs-KE-SCE"/>
@@ -195,7 +195,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="U0O-E4-RGe">
             <objects>
-                <tabBarController id="cPJ-qT-2qa" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" id="cPJ-qT-2qa" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Dwm-wb-OWM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>

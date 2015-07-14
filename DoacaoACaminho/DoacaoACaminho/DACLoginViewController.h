@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+//#import "DACCarregaInformcaoViewController.h"
+#import "DACListaTableViewController.h"
 
-@interface DACLoginViewController : UIViewController
-
+@interface DACLoginViewController : UIViewController <FBSDKLoginButtonDelegate>
 
 @end
 

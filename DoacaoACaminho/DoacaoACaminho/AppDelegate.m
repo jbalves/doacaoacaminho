@@ -22,11 +22,14 @@
     [FBSDKAppEvents activateApp];
 }
 
+#pragma mark - Navigation
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [Parse setApplicationId:@"hvnIoSFbTTNV2dlp2hNroqX6zFe72eiREyheqrYi"
                   clientKey:@"idoZRMFGCwOQT5wuL3tb9d9HWt8T5XpvQLSIoSTd"];
+    
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
 }
