@@ -12,6 +12,4 @@
 
 @interface DACListaTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, weak) NSObject *institution;
-
 @end
