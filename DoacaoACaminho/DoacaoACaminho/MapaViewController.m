@@ -334,6 +334,9 @@
     if([segue.destinationViewController isKindOfClass:[DACInstitutionListViewController class]]) {
         DACInstitutionListViewController *dest = (DACInstitutionListViewController*)segue.destinationViewController;
         dest.institutions = institutions;
+        NSMutableArray *viewControllers = [[self.tabBarController viewControllers] mutableCopy];
+        [viewControllers setObject:dest atIndexedSubscript:[self.tabBarController selectedIndex]];
+        [self.tabBarController setViewControllers:viewControllers animated:NO];
     }
 }
 @end

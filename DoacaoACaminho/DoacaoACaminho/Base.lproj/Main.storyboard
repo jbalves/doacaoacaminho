@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fk4-20-neP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cPJ-qT-2qa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -66,7 +66,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XAg-QI-hyG" kind="presentation" id="0vX-F4-WbV"/>
+                                    <segue destination="XAg-QI-hyG" kind="showDetail" id="pnC-ab-q3R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="2670.5" y="691.5"/>
         </scene>
-        <!--Instituições-->
+        <!--Institution List View Controller-->
         <scene sceneID="iJK-5x-19p">
             <objects>
-                <viewController title="Instituições" id="XAg-QI-hyG" customClass="DACInstitutionListViewController" sceneMemberID="viewController">
+                <viewController id="XAg-QI-hyG" customClass="DACInstitutionListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RV6-ZC-JJU"/>
                         <viewControllerLayoutGuide type="bottom" id="TV6-cb-jNc"/>
@@ -107,7 +107,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Gsn-ay-08U" kind="presentation" id="rgP-iw-L5k"/>
+                                    <segue destination="Gsn-ay-08U" kind="showDetail" id="QPm-5m-uu0"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Iui-O9-BSY">
@@ -489,6 +489,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aOy-UN-dJ1"/>
+        <segue reference="QPm-5m-uu0"/>
     </inferredMetricsTieBreakers>
 </document>

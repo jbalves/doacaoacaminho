@@ -7,6 +7,7 @@
 //
 
 #import "DACInstitutionListViewController.h"
+#import "MapaViewController.h"
 
 @interface DACInstitutionListViewController () <UITableViewDataSource, UITableViewDelegate> 
 
@@ -37,15 +38,17 @@
     return cell;
 }
 
-
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if([segue.destinationViewController isKindOfClass:[MapaViewController class]]) {
+        DACInstitutionListViewController *dest = (DACInstitutionListViewController*)segue.destinationViewController;
+        NSMutableArray *viewControllers = [[self.tabBarController viewControllers] mutableCopy];
+        [viewControllers setObject:dest atIndexedSubscript:[self.tabBarController selectedIndex]];
+        [self.tabBarController setViewControllers:viewControllers animated:NO];
+    }
 }
-*/
+
 
 @end
