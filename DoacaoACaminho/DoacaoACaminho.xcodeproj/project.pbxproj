@@ -59,21 +59,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C1AC4E51B543A67005F7722 /* DACDonationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACDonationDetailViewController.h; sourceTree = "<group>"; };
-		1C1AC4E61B543A67005F7722 /* DACDonationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACDonationDetailViewController.m; sourceTree = "<group>"; };
-		1C6836711B547DC70010231A /* DACInstitutionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACInstitutionListViewController.h; sourceTree = "<group>"; };
-		1C6836721B547DC70010231A /* DACInstitutionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACInstitutionListViewController.m; sourceTree = "<group>"; };
-		1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
-		1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
-		1CBE653C1B4F17A30067B720 /* DACHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACHistoryViewController.h; sourceTree = "<group>"; };
-		1CBE653D1B4F17A30067B720 /* DACHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACHistoryViewController.m; sourceTree = "<group>"; };
-		1CBE653F1B4F186F0067B720 /* DonationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonationStore.h; sourceTree = "<group>"; };
-		1CBE65401B4F186F0067B720 /* DonationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonationStore.m; sourceTree = "<group>"; };
-		1CBE65421B4F2EDD0067B720 /* InstitutionStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstitutionStore.h; sourceTree = "<group>"; };
-		1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstitutionStore.m; sourceTree = "<group>"; };
-		1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACListaTableViewController.m; sourceTree = "<group>"; };
-		1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableViewCell.h; sourceTree = "<group>"; };
-		1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
+		1C1AC4E51B543A67005F7722 /* DACDonationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DACDonationDetailViewController.h; path = controller/DACDonationDetailViewController.h; sourceTree = "<group>"; };
+		1C1AC4E61B543A67005F7722 /* DACDonationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DACDonationDetailViewController.m; path = controller/DACDonationDetailViewController.m; sourceTree = "<group>"; };
+		1C6836711B547DC70010231A /* DACInstitutionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DACInstitutionListViewController.h; path = controller/DACInstitutionListViewController.h; sourceTree = "<group>"; };
+		1C6836721B547DC70010231A /* DACInstitutionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DACInstitutionListViewController.m; path = controller/DACInstitutionListViewController.m; sourceTree = "<group>"; };
+		1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryTableViewCell.h; path = model/tableViewCell/HistoryTableViewCell.h; sourceTree = "<group>"; };
+		1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryTableViewCell.m; path = model/tableViewCell/HistoryTableViewCell.m; sourceTree = "<group>"; };
+		1CBE653C1B4F17A30067B720 /* DACHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DACHistoryViewController.h; path = controller/DACHistoryViewController.h; sourceTree = "<group>"; };
+		1CBE653D1B4F17A30067B720 /* DACHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DACHistoryViewController.m; path = controller/DACHistoryViewController.m; sourceTree = "<group>"; };
+		1CBE653F1B4F186F0067B720 /* DonationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DonationStore.h; path = model/stores/DonationStore.h; sourceTree = "<group>"; };
+		1CBE65401B4F186F0067B720 /* DonationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DonationStore.m; path = model/stores/DonationStore.m; sourceTree = "<group>"; };
+		1CBE65421B4F2EDD0067B720 /* InstitutionStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstitutionStore.h; path = model/stores/InstitutionStore.h; sourceTree = "<group>"; };
+		1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstitutionStore.m; path = model/stores/InstitutionStore.m; sourceTree = "<group>"; };
+		1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DACListaTableViewController.m; path = controller/DACListaTableViewController.m; sourceTree = "<group>"; };
+		1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemTableViewCell.h; path = model/tableViewCell/ItemTableViewCell.h; sourceTree = "<group>"; };
+		1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemTableViewCell.m; path = model/tableViewCell/ItemTableViewCell.m; sourceTree = "<group>"; };
 		712BAF681B0E0FB4000E2E9E /* DoacaoACaminho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoacaoACaminho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712BAF6C1B0E0FB4000E2E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		712BAF6D1B0E0FB4000E2E9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,16 +106,16 @@
 		712BAFBB1B0E2093000E2E9E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		712BAFBC1B0E2093000E2E9E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
-		7144B1831B55A69C00C93219 /* DACLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACLoginViewController.h; sourceTree = "<group>"; };
-		7144B1841B55A69C00C93219 /* DACLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACLoginViewController.m; sourceTree = "<group>"; };
-		79012CB51B0E177900531F7D /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
-		79012CB61B0E177900531F7D /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
+		7144B1831B55A69C00C93219 /* DACLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DACLoginViewController.h; path = controller/DACLoginViewController.h; sourceTree = "<group>"; };
+		7144B1841B55A69C00C93219 /* DACLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DACLoginViewController.m; path = controller/DACLoginViewController.m; sourceTree = "<group>"; };
+		79012CB51B0E177900531F7D /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapaViewController.h; path = controller/MapaViewController.h; sourceTree = "<group>"; };
+		79012CB61B0E177900531F7D /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapaViewController.m; path = controller/MapaViewController.m; sourceTree = "<group>"; };
 		79012CB81B0E256100531F7D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACCarregaInformcaoViewController.h; sourceTree = "<group>"; };
-		79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACCarregaInformcaoViewController.m; sourceTree = "<group>"; };
-		95FDEC511B0E2FF500F7817D /* DACListaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACListaTableViewController.h; sourceTree = "<group>"; };
-		95FDEC531B0E2FF500F7817D /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
-		95FDEC541B0E2FF500F7817D /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
+		79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DACCarregaInformcaoViewController.h; path = controller/DACCarregaInformcaoViewController.h; sourceTree = "<group>"; };
+		79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DACCarregaInformcaoViewController.m; path = controller/DACCarregaInformcaoViewController.m; sourceTree = "<group>"; };
+		95FDEC511B0E2FF500F7817D /* DACListaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DACListaTableViewController.h; path = controller/DACListaTableViewController.h; sourceTree = "<group>"; };
+		95FDEC531B0E2FF500F7817D /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemStore.h; path = model/stores/ItemStore.h; sourceTree = "<group>"; };
+		95FDEC541B0E2FF500F7817D /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemStore.m; path = model/stores/ItemStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,16 +158,8 @@
 		1C13A1F41B49B5B0000562A4 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */,
-				1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */,
-				95FDEC531B0E2FF500F7817D /* ItemStore.h */,
-				95FDEC541B0E2FF500F7817D /* ItemStore.m */,
-				1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */,
-				1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */,
-				1CBE653F1B4F186F0067B720 /* DonationStore.h */,
-				1CBE65401B4F186F0067B720 /* DonationStore.m */,
-				1CBE65421B4F2EDD0067B720 /* InstitutionStore.h */,
-				1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */,
+				1CF1AAD31B56E03B00723622 /* stores */,
+				1CF1AAD21B56DFC700723622 /* tableViewCell */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -201,6 +193,30 @@
 				7144B1841B55A69C00C93219 /* DACLoginViewController.m */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		1CF1AAD21B56DFC700723622 /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */,
+				1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */,
+				1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */,
+				1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */,
+			);
+			name = tableViewCell;
+			sourceTree = "<group>";
+		};
+		1CF1AAD31B56E03B00723622 /* stores */ = {
+			isa = PBXGroup;
+			children = (
+				95FDEC531B0E2FF500F7817D /* ItemStore.h */,
+				95FDEC541B0E2FF500F7817D /* ItemStore.m */,
+				1CBE653F1B4F186F0067B720 /* DonationStore.h */,
+				1CBE65401B4F186F0067B720 /* DonationStore.m */,
+				1CBE65421B4F2EDD0067B720 /* InstitutionStore.h */,
+				1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */,
+			);
+			name = stores;
 			sourceTree = "<group>";
 		};
 		712BAF5F1B0E0FB4000E2E9E = {
