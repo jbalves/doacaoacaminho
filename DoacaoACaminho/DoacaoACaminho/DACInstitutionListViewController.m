@@ -21,6 +21,7 @@
 {
     [super viewDidLoad];
     self.searchResults = [[NSArray alloc] init];
+    //_institutions = [[NSArray alloc] initWithObjects: @"geg", nil];
     
 }
 
@@ -34,20 +35,54 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return _institutions.count;
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
+        return [self.searchResults count];
+    }
+    else
+    {
+        return [_institutions count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellID = @"InstitutionCell";
-    UITableView *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
+        cell.textLabel.text = [self.searchResults objectAtIndex:indexPath.row];
+    }
+    else
+    {
+        cell.textLabel.text = [_institutions objectAtIndex:indexPath.row];
+    }
+    
     return cell;
 }
+
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", searchText];
+    //    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"contains[c] %@", searchText];
+    self.searchResults = [_institutions filteredArrayUsingPredicate:predicate];
+}
+
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:searchString
+                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
+                                      objectAtIndex:[self.searchDisplayController.searchBar
+                                                     selectedScopeButtonIndex]]];
+    
+    return YES;
+}
+
 
 @end

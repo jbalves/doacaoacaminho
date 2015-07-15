@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DACInstitutionListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
+@interface DACInstitutionListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchDisplayDelegate>
 
 @property (nonatomic, strong) NSArray *institutions;
 
