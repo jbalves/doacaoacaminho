@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if([FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"Logado: %@",[FBSDKAccessToken currentAccessToken]);
         [self segueForInitialView];
         return ;
     }
