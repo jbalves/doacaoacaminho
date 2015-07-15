@@ -10,7 +10,7 @@
 #import "ItemTableViewCell.h"
 #import "ItemStore.h"
 
-@interface DACListaTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface ICListItemsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, weak) NSObject *institution;
 

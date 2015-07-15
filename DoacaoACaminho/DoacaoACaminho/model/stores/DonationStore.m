@@ -48,7 +48,7 @@
     allDonations = [donationQuery findObjects:&error];
     if (error)
         NSLog(@"Error in DataBase operation: %@ %@", error, [error userInfo]);
-    NSLog(@"%ld", allDonations.count);
+    NSLog(@"%lu", (unsigned long)allDonations.count);
     
     return allDonations;
 }

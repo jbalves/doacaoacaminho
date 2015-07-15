@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ICLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="1192" y="307"/>
         </scene>
-        <!--Item 2-->
+        <!--Instituições-->
         <scene sceneID="QlO-le-gFR">
             <objects>
-                <viewController id="Gsn-ay-08U" customClass="MapaViewController" sceneMemberID="viewController">
+                <viewController title="Instituições" id="Gsn-ay-08U" customClass="ICInstitutionsMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fLM-IQ-9jf"/>
                         <viewControllerLayoutGuide type="bottom" id="2eP-vv-cVH"/>
@@ -66,13 +66,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XAg-QI-hyG" kind="presentation" id="0vX-F4-WbV"/>
+                                    <segue destination="XAg-QI-hyG" kind="showDetail" id="pnC-ab-q3R"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.70980392160000005" green="0.82352941180000006" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="l7Z-2F-bE9"/>
+                    <tabBarItem key="tabBarItem" title="item 2" id="l7Z-2F-bE9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="map" destination="bmu-6q-IX3" id="cnV-uP-NpL"/>
@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="2670.5" y="691.5"/>
         </scene>
-        <!--Institution List View Controller-->
+        <!--Institutions List View Controller-->
         <scene sceneID="iJK-5x-19p">
             <objects>
-                <viewController id="XAg-QI-hyG" customClass="DACInstitutionListViewController" sceneMemberID="viewController">
+                <viewController id="XAg-QI-hyG" customClass="ICInstitutionsListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RV6-ZC-JJU"/>
                         <viewControllerLayoutGuide type="bottom" id="TV6-cb-jNc"/>
@@ -100,12 +100,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Gsn-ay-08U" kind="presentation" id="rgP-iw-L5k"/>
+                                    <segue destination="Gsn-ay-08U" kind="showDetail" id="QPm-5m-uu0"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Iui-O9-BSY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Iui-O9-BSY">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.70980392160000005" green="0.82352941180000006" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.074509803920000006" green="0.2784313725" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InstitutionCell" textLabel="0IO-4i-7Np" style="IBUITableViewCellStyleDefault" id="9aA-38-nHZ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -121,6 +123,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -165,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="3232.5" y="691.5"/>
         </scene>
-        <!--History View Controller-->
+        <!--Histórico-->
         <scene sceneID="Y37-Mo-FXc">
             <objects>
-                <viewController id="2mj-0W-LBr" customClass="DACHistoryViewController" sceneMemberID="viewController">
+                <viewController title="Histórico" id="2mj-0W-LBr" customClass="ICHistoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mZg-dd-eIp"/>
                         <viewControllerLayoutGuide type="bottom" id="oZS-5h-ARV"/>
@@ -177,9 +180,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bak-EO-lw0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bak-EO-lw0">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.70980392160000005" green="0.82352941180000006" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.074509803920000006" green="0.2784313725" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="100" id="RnB-Wt-30q" customClass="HistoryTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -204,7 +209,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="date" destination="TRL-3Z-obS" id="AMD-eg-bcq"/>
                                             <outlet property="imgViewInstitution" destination="TQu-pR-J5O" id="97y-pv-K8x"/>
@@ -237,10 +242,10 @@
             </objects>
             <point key="canvasLocation" x="3585.5" y="-46.5"/>
         </scene>
-        <!--Donation Detail View Controller-->
+        <!--Sua doação-->
         <scene sceneID="Wnx-sM-r4e">
             <objects>
-                <viewController id="LbK-98-odx" customClass="DACDonationDetailViewController" sceneMemberID="viewController">
+                <viewController title="Sua doação" id="LbK-98-odx" customClass="ICDonationDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2ha-fp-Pif"/>
                         <viewControllerLayoutGuide type="bottom" id="jCe-bI-uUC"/>
@@ -270,9 +275,11 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4lm-3d-JSK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4lm-3d-JSK">
                                 <rect key="frame" x="0.0" y="170" width="375" height="375"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.074509803920000006" green="0.2784313725" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.074509803920000006" green="0.2784313725" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemDetailCell" textLabel="Yvo-VW-QiQ" style="IBUITableViewCellStyleDefault" id="baw-JM-eDP">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -288,6 +295,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -303,13 +311,15 @@
                             </label>
                             <segmentedControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JOy-HF-qzN">
                                 <rect key="frame" x="123" y="582" width="129" height="29"/>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.2784313725" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <segments>
                                     <segment title="A caminho"/>
                                     <segment title="Entregue"/>
                                 </segments>
+                                <color key="tintColor" red="0.70980392160000005" green="0.82352941180000006" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.70980392160000005" green="0.82352941180000006" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="imgInstitution" destination="IuI-tW-ReI" id="eYT-Kb-Giz"/>
@@ -324,10 +334,10 @@
             </objects>
             <point key="canvasLocation" x="3585.5" y="-783.5"/>
         </scene>
-        <!--Lista Table View Controller-->
+        <!--Doação-->
         <scene sceneID="Og7-eM-Zw2">
             <objects>
-                <viewController id="Qbz-B2-VmK" customClass="DACListaTableViewController" sceneMemberID="viewController">
+                <viewController title="Doação" id="Qbz-B2-VmK" customClass="ICListItemsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jua-GO-W8y"/>
                         <viewControllerLayoutGuide type="bottom" id="dcs-KE-SCE"/>
@@ -338,7 +348,8 @@
                         <subviews>
                             <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3lK-lm-shm">
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.70980392160000005" green="0.82352941180000006" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="cgv-6M-T3O" customClass="ItemTableViewCell">
                                         <rect key="frame" x="0.0" y="86" width="375" height="44"/>
@@ -355,6 +366,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="name" destination="rzO-wO-QKE" id="Mvm-Jv-TGQ"/>
                                         </connections>
@@ -446,7 +458,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="U0O-E4-RGe">
             <objects>
-                <tabBarController id="cPJ-qT-2qa" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTabBar" id="cPJ-qT-2qa" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Dwm-wb-OWM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -480,11 +492,11 @@
             </objects>
             <point key="canvasLocation" x="252" y="300"/>
         </scene>
-        <!--Item 1-->
+        <!--item 1-->
         <scene sceneID="bpU-li-XOY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wYV-qi-a46" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="u6m-iV-q6V"/>
+                    <tabBarItem key="tabBarItem" title="item 1" id="u6m-iV-q6V"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpP-FC-wu6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -519,6 +531,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rgP-iw-L5k"/>
+        <segue reference="QPm-5m-uu0"/>
     </inferredMetricsTieBreakers>
 </document>

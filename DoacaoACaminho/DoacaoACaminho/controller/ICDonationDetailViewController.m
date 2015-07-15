@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Jeferson Barros Alves. All rights reserved.
 //
 
-#import "DACDonationDetailViewController.h"
+#import "ICDonationDetailViewController.h"
 #import "DonationStore.h"
 
-@interface DACDonationDetailViewController () <UITableViewDataSource, UITableViewDelegate> {
+@interface ICDonationDetailViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSArray *donatedItems;
 }
 
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation DACDonationDetailViewController
+@implementation ICDonationDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

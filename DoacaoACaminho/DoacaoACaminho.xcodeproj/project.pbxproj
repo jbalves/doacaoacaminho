@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C1AC4E71B543A67005F7722 /* DACDonationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AC4E61B543A67005F7722 /* DACDonationDetailViewController.m */; };
-		1C6836731B547DC70010231A /* DACInstitutionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6836721B547DC70010231A /* DACInstitutionListViewController.m */; };
+		1C1AC4E71B543A67005F7722 /* ICDonationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AC4E61B543A67005F7722 /* ICDonationDetailViewController.m */; };
+		1C6836731B547DC70010231A /* ICInstitutionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6836721B547DC70010231A /* ICInstitutionsListViewController.m */; };
 		1CBE653B1B4F14D60067B720 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */; };
-		1CBE653E1B4F17A30067B720 /* DACHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE653D1B4F17A30067B720 /* DACHistoryViewController.m */; };
+		1CBE653E1B4F17A30067B720 /* ICHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE653D1B4F17A30067B720 /* ICHistoryViewController.m */; };
 		1CBE65411B4F186F0067B720 /* DonationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE65401B4F186F0067B720 /* DonationStore.m */; };
 		1CBE65441B4F2EDD0067B720 /* InstitutionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */; };
-		1CF5E9301B0EF4FD00DD2BDE /* DACListaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */; };
+		1CF5E9301B0EF4FD00DD2BDE /* ICListItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5E92F1B0EF4FD00DD2BDE /* ICListItemsViewController.m */; };
 		1CF697E71B48F4FC00DBD17D /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */; };
 		712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF6D1B0E0FB4000E2E9E /* main.m */; };
 		712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF701B0E0FB4000E2E9E /* AppDelegate.m */; };
 		712BAF741B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF721B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld */; };
-		712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF761B0E0FB4000E2E9E /* ViewController.m */; };
 		712BAF7A1B0E0FB4000E2E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF781B0E0FB4000E2E9E /* Main.storyboard */; };
 		712BAF7C1B0E0FB4000E2E9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */; };
 		712BAF7F1B0E0FB4000E2E9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */; };
@@ -41,7 +40,8 @@
 		712BAFBE1B0E2093000E2E9E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBB1B0E2093000E2E9E /* FBSDKCoreKit.framework */; };
 		712BAFBF1B0E2093000E2E9E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBC1B0E2093000E2E9E /* FBSDKLoginKit.framework */; };
 		712BAFC01B0E2093000E2E9E /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */; };
-		79012CB71B0E177900531F7D /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CB61B0E177900531F7D /* MapaViewController.m */; };
+		7144B1851B55A69C00C93219 /* ICLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7144B1841B55A69C00C93219 /* ICLoginViewController.m */; };
+		79012CB71B0E177900531F7D /* ICInstitutionsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CB61B0E177900531F7D /* ICInstitutionsMapViewController.m */; };
 		79012CB91B0E256100531F7D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79012CB81B0E256100531F7D /* MapKit.framework */; };
 		79012CBC1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */; };
 		95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FDEC541B0E2FF500F7817D /* ItemStore.m */; };
@@ -58,29 +58,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C1AC4E51B543A67005F7722 /* DACDonationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACDonationDetailViewController.h; sourceTree = "<group>"; };
-		1C1AC4E61B543A67005F7722 /* DACDonationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACDonationDetailViewController.m; sourceTree = "<group>"; };
-		1C6836711B547DC70010231A /* DACInstitutionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACInstitutionListViewController.h; sourceTree = "<group>"; };
-		1C6836721B547DC70010231A /* DACInstitutionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACInstitutionListViewController.m; sourceTree = "<group>"; };
-		1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
-		1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
-		1CBE653C1B4F17A30067B720 /* DACHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACHistoryViewController.h; sourceTree = "<group>"; };
-		1CBE653D1B4F17A30067B720 /* DACHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACHistoryViewController.m; sourceTree = "<group>"; };
-		1CBE653F1B4F186F0067B720 /* DonationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonationStore.h; sourceTree = "<group>"; };
-		1CBE65401B4F186F0067B720 /* DonationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonationStore.m; sourceTree = "<group>"; };
-		1CBE65421B4F2EDD0067B720 /* InstitutionStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstitutionStore.h; sourceTree = "<group>"; };
-		1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstitutionStore.m; sourceTree = "<group>"; };
-		1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACListaTableViewController.m; sourceTree = "<group>"; };
-		1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableViewCell.h; sourceTree = "<group>"; };
-		1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
+		1C1AC4E51B543A67005F7722 /* ICDonationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICDonationDetailViewController.h; path = controller/ICDonationDetailViewController.h; sourceTree = "<group>"; };
+		1C1AC4E61B543A67005F7722 /* ICDonationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICDonationDetailViewController.m; path = controller/ICDonationDetailViewController.m; sourceTree = "<group>"; };
+		1C6836711B547DC70010231A /* ICInstitutionsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICInstitutionsListViewController.h; path = controller/ICInstitutionsListViewController.h; sourceTree = "<group>"; };
+		1C6836721B547DC70010231A /* ICInstitutionsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICInstitutionsListViewController.m; path = controller/ICInstitutionsListViewController.m; sourceTree = "<group>"; };
+		1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryTableViewCell.h; path = model/tableViewCell/HistoryTableViewCell.h; sourceTree = "<group>"; };
+		1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryTableViewCell.m; path = model/tableViewCell/HistoryTableViewCell.m; sourceTree = "<group>"; };
+		1CBE653C1B4F17A30067B720 /* ICHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICHistoryViewController.h; path = controller/ICHistoryViewController.h; sourceTree = "<group>"; };
+		1CBE653D1B4F17A30067B720 /* ICHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICHistoryViewController.m; path = controller/ICHistoryViewController.m; sourceTree = "<group>"; };
+		1CBE653F1B4F186F0067B720 /* DonationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DonationStore.h; path = model/stores/DonationStore.h; sourceTree = "<group>"; };
+		1CBE65401B4F186F0067B720 /* DonationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DonationStore.m; path = model/stores/DonationStore.m; sourceTree = "<group>"; };
+		1CBE65421B4F2EDD0067B720 /* InstitutionStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstitutionStore.h; path = model/stores/InstitutionStore.h; sourceTree = "<group>"; };
+		1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstitutionStore.m; path = model/stores/InstitutionStore.m; sourceTree = "<group>"; };
+		1CF5E92F1B0EF4FD00DD2BDE /* ICListItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICListItemsViewController.m; path = controller/ICListItemsViewController.m; sourceTree = "<group>"; };
+		1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemTableViewCell.h; path = model/tableViewCell/ItemTableViewCell.h; sourceTree = "<group>"; };
+		1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemTableViewCell.m; path = model/tableViewCell/ItemTableViewCell.m; sourceTree = "<group>"; };
 		712BAF681B0E0FB4000E2E9E /* DoacaoACaminho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoacaoACaminho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712BAF6C1B0E0FB4000E2E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		712BAF6D1B0E0FB4000E2E9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		712BAF6F1B0E0FB4000E2E9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		712BAF701B0E0FB4000E2E9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		712BAF731B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoacaoACaminho.xcdatamodel; sourceTree = "<group>"; };
-		712BAF751B0E0FB4000E2E9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		712BAF761B0E0FB4000E2E9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		712BAF791B0E0FB4000E2E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		712BAF7E1B0E0FB4000E2E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -105,14 +103,16 @@
 		712BAFBB1B0E2093000E2E9E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		712BAFBC1B0E2093000E2E9E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
-		79012CB51B0E177900531F7D /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
-		79012CB61B0E177900531F7D /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
+		7144B1831B55A69C00C93219 /* ICLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICLoginViewController.h; path = controller/ICLoginViewController.h; sourceTree = "<group>"; };
+		7144B1841B55A69C00C93219 /* ICLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICLoginViewController.m; path = controller/ICLoginViewController.m; sourceTree = "<group>"; };
+		79012CB51B0E177900531F7D /* ICInstitutionsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICInstitutionsMapViewController.h; path = controller/ICInstitutionsMapViewController.h; sourceTree = "<group>"; };
+		79012CB61B0E177900531F7D /* ICInstitutionsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICInstitutionsMapViewController.m; path = controller/ICInstitutionsMapViewController.m; sourceTree = "<group>"; };
 		79012CB81B0E256100531F7D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACCarregaInformcaoViewController.h; sourceTree = "<group>"; };
-		79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACCarregaInformcaoViewController.m; sourceTree = "<group>"; };
-		95FDEC511B0E2FF500F7817D /* DACListaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACListaTableViewController.h; sourceTree = "<group>"; };
-		95FDEC531B0E2FF500F7817D /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
-		95FDEC541B0E2FF500F7817D /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
+		79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DACCarregaInformcaoViewController.h; path = controller/DACCarregaInformcaoViewController.h; sourceTree = "<group>"; };
+		79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DACCarregaInformcaoViewController.m; path = controller/DACCarregaInformcaoViewController.m; sourceTree = "<group>"; };
+		95FDEC511B0E2FF500F7817D /* ICListItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICListItemsViewController.h; path = controller/ICListItemsViewController.h; sourceTree = "<group>"; };
+		95FDEC531B0E2FF500F7817D /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemStore.h; path = model/stores/ItemStore.h; sourceTree = "<group>"; };
+		95FDEC541B0E2FF500F7817D /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemStore.m; path = model/stores/ItemStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,16 +155,8 @@
 		1C13A1F41B49B5B0000562A4 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */,
-				1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */,
-				95FDEC531B0E2FF500F7817D /* ItemStore.h */,
-				95FDEC541B0E2FF500F7817D /* ItemStore.m */,
-				1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */,
-				1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */,
-				1CBE653F1B4F186F0067B720 /* DonationStore.h */,
-				1CBE65401B4F186F0067B720 /* DonationStore.m */,
-				1CBE65421B4F2EDD0067B720 /* InstitutionStore.h */,
-				1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */,
+				1CF1AAD31B56E03B00723622 /* stores */,
+				1CF1AAD21B56DFC700723622 /* tableViewCell */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -180,22 +172,46 @@
 		1C13A1F61B49B5D9000562A4 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				712BAF751B0E0FB4000E2E9E /* ViewController.h */,
-				712BAF761B0E0FB4000E2E9E /* ViewController.m */,
-				95FDEC511B0E2FF500F7817D /* DACListaTableViewController.h */,
-				1CF5E92F1B0EF4FD00DD2BDE /* DACListaTableViewController.m */,
-				79012CB51B0E177900531F7D /* MapaViewController.h */,
-				79012CB61B0E177900531F7D /* MapaViewController.m */,
-				1C6836711B547DC70010231A /* DACInstitutionListViewController.h */,
-				1C6836721B547DC70010231A /* DACInstitutionListViewController.m */,
+				7144B1831B55A69C00C93219 /* ICLoginViewController.h */,
+				7144B1841B55A69C00C93219 /* ICLoginViewController.m */,
+				1CBE653C1B4F17A30067B720 /* ICHistoryViewController.h */,
+				1CBE653D1B4F17A30067B720 /* ICHistoryViewController.m */,
+				1C1AC4E51B543A67005F7722 /* ICDonationDetailViewController.h */,
+				1C1AC4E61B543A67005F7722 /* ICDonationDetailViewController.m */,
+				95FDEC511B0E2FF500F7817D /* ICListItemsViewController.h */,
+				1CF5E92F1B0EF4FD00DD2BDE /* ICListItemsViewController.m */,
+				79012CB51B0E177900531F7D /* ICInstitutionsMapViewController.h */,
+				79012CB61B0E177900531F7D /* ICInstitutionsMapViewController.m */,
+				1C6836711B547DC70010231A /* ICInstitutionsListViewController.h */,
+				1C6836721B547DC70010231A /* ICInstitutionsListViewController.m */,
 				79012CBA1B0E2E6700531F7D /* DACCarregaInformcaoViewController.h */,
 				79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */,
-				1CBE653C1B4F17A30067B720 /* DACHistoryViewController.h */,
-				1CBE653D1B4F17A30067B720 /* DACHistoryViewController.m */,
-				1C1AC4E51B543A67005F7722 /* DACDonationDetailViewController.h */,
-				1C1AC4E61B543A67005F7722 /* DACDonationDetailViewController.m */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		1CF1AAD21B56DFC700723622 /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1CF697E51B48F4FC00DBD17D /* ItemTableViewCell.h */,
+				1CF697E61B48F4FC00DBD17D /* ItemTableViewCell.m */,
+				1CBE65391B4F14D60067B720 /* HistoryTableViewCell.h */,
+				1CBE653A1B4F14D60067B720 /* HistoryTableViewCell.m */,
+			);
+			name = tableViewCell;
+			sourceTree = "<group>";
+		};
+		1CF1AAD31B56E03B00723622 /* stores */ = {
+			isa = PBXGroup;
+			children = (
+				95FDEC531B0E2FF500F7817D /* ItemStore.h */,
+				95FDEC541B0E2FF500F7817D /* ItemStore.m */,
+				1CBE653F1B4F186F0067B720 /* DonationStore.h */,
+				1CBE65401B4F186F0067B720 /* DonationStore.m */,
+				1CBE65421B4F2EDD0067B720 /* InstitutionStore.h */,
+				1CBE65431B4F2EDD0067B720 /* InstitutionStore.m */,
+			);
+			name = stores;
 			sourceTree = "<group>";
 		};
 		712BAF5F1B0E0FB4000E2E9E = {
@@ -329,7 +345,7 @@
 		712BAF601B0E0FB4000E2E9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Jeferson Barros Alves";
 				TargetAttributes = {
 					712BAF671B0E0FB4000E2E9E = {
@@ -393,17 +409,17 @@
 				1CF697E71B48F4FC00DBD17D /* ItemTableViewCell.m in Sources */,
 				79012CBC1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m in Sources */,
 				712BAF741B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld in Sources */,
-				79012CB71B0E177900531F7D /* MapaViewController.m in Sources */,
+				7144B1851B55A69C00C93219 /* ICLoginViewController.m in Sources */,
+				79012CB71B0E177900531F7D /* ICInstitutionsMapViewController.m in Sources */,
 				1CBE65411B4F186F0067B720 /* DonationStore.m in Sources */,
 				712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */,
-				1CF5E9301B0EF4FD00DD2BDE /* DACListaTableViewController.m in Sources */,
+				1CF5E9301B0EF4FD00DD2BDE /* ICListItemsViewController.m in Sources */,
 				1CBE65441B4F2EDD0067B720 /* InstitutionStore.m in Sources */,
 				95FDEC561B0E2FF500F7817D /* ItemStore.m in Sources */,
-				1C6836731B547DC70010231A /* DACInstitutionListViewController.m in Sources */,
-				1CBE653E1B4F17A30067B720 /* DACHistoryViewController.m in Sources */,
-				712BAF771B0E0FB4000E2E9E /* ViewController.m in Sources */,
+				1C6836731B547DC70010231A /* ICInstitutionsListViewController.m in Sources */,
+				1CBE653E1B4F17A30067B720 /* ICHistoryViewController.m in Sources */,
 				1CBE653B1B4F14D60067B720 /* HistoryTableViewCell.m in Sources */,
-				1C1AC4E71B543A67005F7722 /* DACDonationDetailViewController.m in Sources */,
+				1C1AC4E71B543A67005F7722 /* ICDonationDetailViewController.m in Sources */,
 				712BAF6E1B0E0FB4000E2E9E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +483,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -537,6 +554,7 @@
 				);
 				INFOPLIST_FILE = DoacaoACaminho/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -553,6 +571,7 @@
 				);
 				INFOPLIST_FILE = DoacaoACaminho/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -571,6 +590,7 @@
 				);
 				INFOPLIST_FILE = DoacaoACaminhoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoacaoACaminho.app/DoacaoACaminho";
 			};
@@ -586,6 +606,7 @@
 				);
 				INFOPLIST_FILE = DoacaoACaminhoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoacaoACaminho.app/DoacaoACaminho";
 			};

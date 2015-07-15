@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface DACDonationDetailViewController : UIViewController
+@interface ICDonationDetailViewController : UIViewController
 
 @property (nonatomic, strong) PFObject *donation;
 @property (nonatomic, strong) NSObject *institution;

@@ -6,24 +6,24 @@
 //  Copyright (c) 2015 Jeferson Barros Alves. All rights reserved.
 //
 
-#import "DACHistoryViewController.h"
+#import "ICHistoryViewController.h"
 #import "DonationStore.h"
 #import "HistoryTableViewCell.h"
-#import "DACDonationDetailViewController.h"
+#import "ICDonationDetailViewController.h"
 
-@interface DACHistoryViewController() <UITableViewDataSource, UITableViewDelegate> {
+@interface ICHistoryViewController() <UITableViewDataSource, UITableViewDelegate> {
     NSArray *donations;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tbViewHistory;
 
 @end
 
-@implementation DACHistoryViewController
+@implementation ICHistoryViewController
 
 - (void)viewDidLoad {
     donations = [[NSArray alloc] init];
     donations = [[DonationStore sharedStore] getUserDonationInfo];
-    NSLog(@"%ld", donations.count);
+    NSLog(@"%ld", (unsigned long)donations.count);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -50,7 +50,7 @@
         return ;
     
     [_tbViewHistory deselectRowAtIndexPath:iPath animated:NO];
-    DACDonationDetailViewController *destination = (DACDonationDetailViewController*)segue.destinationViewController;
+    ICDonationDetailViewController *destination = (ICDonationDetailViewController*)segue.destinationViewController;
     destination.donation = (PFObject*)[donations[iPath.row] valueForKey:@"donationObject"];
     destination.institution = [donations[iPath.row] valueForKey:@"institutionObject"];
 }

@@ -6,17 +6,17 @@
 //  Copyright (c) 2015 Jeferson Barros Alves. All rights reserved.
 //
 
-#import "MapaViewController.h"
-#import "DACInstitutionListViewController.h"
+#import "ICInstitutionsMapViewController.h"
+#import "ICInstitutionsListViewController.h"
 #import "InstitutionStore.h"
 
-@interface MapaViewController () {
+@interface ICInstitutionsMapViewController () {
     NSMutableArray *institutions;
 }
 
 @end
 
-@implementation MapaViewController
+@implementation ICInstitutionsMapViewController
 
 - (void)viewDidLoad
 {
@@ -331,9 +331,12 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([segue.destinationViewController isKindOfClass:[DACInstitutionListViewController class]]) {
-        DACInstitutionListViewController *dest = (DACInstitutionListViewController*)segue.destinationViewController;
+    if([segue.destinationViewController isKindOfClass:[ICInstitutionsListViewController class]]) {
+        ICInstitutionsListViewController *dest = (ICInstitutionsListViewController*)segue.destinationViewController;
         dest.institutions = institutions;
+        NSMutableArray *viewControllers = [[self.tabBarController viewControllers] mutableCopy];
+        [viewControllers setObject:dest atIndexedSubscript:[self.tabBarController selectedIndex]];
+        [self.tabBarController setViewControllers:viewControllers animated:NO];
     }
 }
 @end

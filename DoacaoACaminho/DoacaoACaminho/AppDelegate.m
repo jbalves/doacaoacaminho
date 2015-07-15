@@ -10,6 +10,8 @@
 #import <Parse/Parse.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "ICHistoryViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -19,9 +21,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    UIColor *mainColor = [UIColor colorWithRed:19.0/255 green:71.0/255 blue:121.0/255 alpha:0.9];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:19.0/255 green:71.0/255 blue:121.0/255 alpha:0.9]];
+    [[UITabBar appearance] setBarTintColor:mainColor];
     // Override point for customization after application launch.
     [Parse setApplicationId:@"hvnIoSFbTTNV2dlp2hNroqX6zFe72eiREyheqrYi"
                   clientKey:@"idoZRMFGCwOQT5wuL3tb9d9HWt8T5XpvQLSIoSTd"];
+    
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
 }

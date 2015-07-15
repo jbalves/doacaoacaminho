@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Jeferson Barros Alves. All rights reserved.
 //
 
-#import "DACInstitutionListViewController.h"
+#import "ICInstitutionsListViewController.h"
+#import "ICInstitutionsMapViewController.h"
 
 @interface DACInstitutionListViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -15,7 +16,7 @@
 
 @end
 
-@implementation DACInstitutionListViewController
+@implementation ICInstitutionsListViewController
 
 - (void)viewDidLoad
 {
