@@ -390,47 +390,6 @@
             </objects>
             <point key="canvasLocation" x="4238.5" y="-46.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="aSv-Dz-O9p">
-            <objects>
-                <viewController id="dy7-C1-rUW" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GSg-UW-2cM"/>
-                        <viewControllerLayoutGuide type="bottom" id="UVn-wZ-CY7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sJO-wS-R9v">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="clS-Ga-YyJ"/>
-                    </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CqQ-VW-WPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5750" y="307"/>
-        </scene>
-        <!--Carrega Informcao View Controller-->
-        <scene sceneID="T7G-36-Vso">
-            <objects>
-                <viewController storyboardIdentifier="st" id="LoQ-DZ-fcR" customClass="DACCarregaInformcaoViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VhV-SP-Zck"/>
-                        <viewControllerLayoutGuide type="bottom" id="Yrj-U7-zEN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Nov-jQ-5Dc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HZS-TU-nwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2670.5" y="1437.5"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="U0O-E4-RGe">
             <objects>
