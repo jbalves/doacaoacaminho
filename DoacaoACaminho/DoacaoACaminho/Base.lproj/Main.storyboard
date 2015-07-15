@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fk4-20-neP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cPJ-qT-2qa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="1192" y="307"/>
         </scene>
-        <!--Item 2-->
+        <!--Instituições-->
         <scene sceneID="QlO-le-gFR">
             <objects>
-                <viewController id="Gsn-ay-08U" customClass="MapaViewController" sceneMemberID="viewController">
+                <viewController title="Instituições" id="Gsn-ay-08U" customClass="MapaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fLM-IQ-9jf"/>
                         <viewControllerLayoutGuide type="bottom" id="2eP-vv-cVH"/>
@@ -66,13 +66,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XAg-QI-hyG" kind="presentation" id="0vX-F4-WbV"/>
+                                    <segue destination="XAg-QI-hyG" kind="showDetail" id="pnC-ab-q3R"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="l7Z-2F-bE9"/>
+                    <tabBarItem key="tabBarItem" title="item 2" id="l7Z-2F-bE9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="map" destination="bmu-6q-IX3" id="cnV-uP-NpL"/>
@@ -107,7 +107,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Gsn-ay-08U" kind="presentation" id="rgP-iw-L5k"/>
+                                    <segue destination="Gsn-ay-08U" kind="showDetail" id="QPm-5m-uu0"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Iui-O9-BSY">
@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="3204.5" y="657.5"/>
         </scene>
-        <!--History View Controller-->
+        <!--Histórico-->
         <scene sceneID="Y37-Mo-FXc">
             <objects>
-                <viewController id="2mj-0W-LBr" customClass="DACHistoryViewController" sceneMemberID="viewController">
+                <viewController title="Histórico" id="2mj-0W-LBr" customClass="DACHistoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mZg-dd-eIp"/>
                         <viewControllerLayoutGuide type="bottom" id="oZS-5h-ARV"/>
@@ -228,10 +228,10 @@
             </objects>
             <point key="canvasLocation" x="3585.5" y="-46.5"/>
         </scene>
-        <!--Donation Detail View Controller-->
+        <!--Sua doação-->
         <scene sceneID="Wnx-sM-r4e">
             <objects>
-                <viewController id="LbK-98-odx" customClass="DACDonationDetailViewController" sceneMemberID="viewController">
+                <viewController title="Sua doação" id="LbK-98-odx" customClass="DACDonationDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2ha-fp-Pif"/>
                         <viewControllerLayoutGuide type="bottom" id="jCe-bI-uUC"/>
@@ -315,10 +315,10 @@
             </objects>
             <point key="canvasLocation" x="3585.5" y="-783.5"/>
         </scene>
-        <!--Lista Table View Controller-->
+        <!--Doação-->
         <scene sceneID="Og7-eM-Zw2">
             <objects>
-                <viewController id="Qbz-B2-VmK" customClass="DACListaTableViewController" sceneMemberID="viewController">
+                <viewController title="Doação" id="Qbz-B2-VmK" customClass="DACListaTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jua-GO-W8y"/>
                         <viewControllerLayoutGuide type="bottom" id="dcs-KE-SCE"/>
@@ -390,47 +390,6 @@
             </objects>
             <point key="canvasLocation" x="4238.5" y="-46.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="aSv-Dz-O9p">
-            <objects>
-                <viewController id="dy7-C1-rUW" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GSg-UW-2cM"/>
-                        <viewControllerLayoutGuide type="bottom" id="UVn-wZ-CY7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sJO-wS-R9v">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="clS-Ga-YyJ"/>
-                    </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CqQ-VW-WPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5750" y="307"/>
-        </scene>
-        <!--Carrega Informcao View Controller-->
-        <scene sceneID="T7G-36-Vso">
-            <objects>
-                <viewController storyboardIdentifier="st" id="LoQ-DZ-fcR" customClass="DACCarregaInformcaoViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VhV-SP-Zck"/>
-                        <viewControllerLayoutGuide type="bottom" id="Yrj-U7-zEN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Nov-jQ-5Dc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HZS-TU-nwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2670.5" y="1437.5"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="U0O-E4-RGe">
             <objects>
@@ -468,11 +427,11 @@
             </objects>
             <point key="canvasLocation" x="252" y="300"/>
         </scene>
-        <!--Item 1-->
+        <!--item 1-->
         <scene sceneID="bpU-li-XOY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wYV-qi-a46" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="u6m-iV-q6V"/>
+                    <tabBarItem key="tabBarItem" title="item 1" id="u6m-iV-q6V"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpP-FC-wu6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -489,6 +448,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aOy-UN-dJ1"/>
+        <segue reference="QPm-5m-uu0"/>
     </inferredMetricsTieBreakers>
 </document>
