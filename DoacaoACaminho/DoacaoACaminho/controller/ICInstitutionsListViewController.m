@@ -6,14 +6,14 @@
 //  Copyright (c) 2015 Jeferson Barros Alves. All rights reserved.
 //
 
-#import "DACInstitutionListViewController.h"
-#import "MapaViewController.h"
+#import "ICInstitutionsListViewController.h"
+#import "ICInstitutionsMapViewController.h"
 
-@interface DACInstitutionListViewController () <UITableViewDataSource, UITableViewDelegate> 
+@interface ICInstitutionsListViewController () <UITableViewDataSource, UITableViewDelegate> 
 
 @end
 
-@implementation DACInstitutionListViewController
+@implementation ICInstitutionsListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,8 +42,8 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([segue.destinationViewController isKindOfClass:[MapaViewController class]]) {
-        DACInstitutionListViewController *dest = (DACInstitutionListViewController*)segue.destinationViewController;
+    if([segue.destinationViewController isKindOfClass:[ICInstitutionsMapViewController class]]) {
+        ICInstitutionsListViewController *dest = (ICInstitutionsListViewController*)segue.destinationViewController;
         NSMutableArray *viewControllers = [[self.tabBarController viewControllers] mutableCopy];
         [viewControllers setObject:dest atIndexedSubscript:[self.tabBarController selectedIndex]];
         [self.tabBarController setViewControllers:viewControllers animated:NO];

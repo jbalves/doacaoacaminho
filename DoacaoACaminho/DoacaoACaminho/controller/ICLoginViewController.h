@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import "DACHistoryViewController.h"
+#import "ICHistoryViewController.h"
 
-@interface DACLoginViewController : UIViewController <FBSDKLoginButtonDelegate>
+@interface ICLoginViewController : UIViewController <FBSDKLoginButtonDelegate>
 
 @end

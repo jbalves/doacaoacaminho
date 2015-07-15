@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cPJ-qT-2qa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fk4-20-neP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--Login View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="DACLoginViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ICLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -26,7 +26,7 @@
         <!--Instituições-->
         <scene sceneID="QlO-le-gFR">
             <objects>
-                <viewController title="Instituições" id="Gsn-ay-08U" customClass="MapaViewController" sceneMemberID="viewController">
+                <viewController title="Instituições" id="Gsn-ay-08U" customClass="ICInstitutionsMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fLM-IQ-9jf"/>
                         <viewControllerLayoutGuide type="bottom" id="2eP-vv-cVH"/>
@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="2670.5" y="691.5"/>
         </scene>
-        <!--Institution List View Controller-->
+        <!--Institutions List View Controller-->
         <scene sceneID="iJK-5x-19p">
             <objects>
-                <viewController id="XAg-QI-hyG" customClass="DACInstitutionListViewController" sceneMemberID="viewController">
+                <viewController id="XAg-QI-hyG" customClass="ICInstitutionsListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RV6-ZC-JJU"/>
                         <viewControllerLayoutGuide type="bottom" id="TV6-cb-jNc"/>
@@ -159,7 +159,7 @@
         <!--Histórico-->
         <scene sceneID="Y37-Mo-FXc">
             <objects>
-                <viewController title="Histórico" id="2mj-0W-LBr" customClass="DACHistoryViewController" sceneMemberID="viewController">
+                <viewController title="Histórico" id="2mj-0W-LBr" customClass="ICHistoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mZg-dd-eIp"/>
                         <viewControllerLayoutGuide type="bottom" id="oZS-5h-ARV"/>
@@ -231,7 +231,7 @@
         <!--Sua doação-->
         <scene sceneID="Wnx-sM-r4e">
             <objects>
-                <viewController title="Sua doação" id="LbK-98-odx" customClass="DACDonationDetailViewController" sceneMemberID="viewController">
+                <viewController title="Sua doação" id="LbK-98-odx" customClass="ICDonationDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2ha-fp-Pif"/>
                         <viewControllerLayoutGuide type="bottom" id="jCe-bI-uUC"/>
@@ -318,7 +318,7 @@
         <!--Doação-->
         <scene sceneID="Og7-eM-Zw2">
             <objects>
-                <viewController title="Doação" id="Qbz-B2-VmK" customClass="DACListaTableViewController" sceneMemberID="viewController">
+                <viewController title="Doação" id="Qbz-B2-VmK" customClass="ICListItemsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jua-GO-W8y"/>
                         <viewControllerLayoutGuide type="bottom" id="dcs-KE-SCE"/>

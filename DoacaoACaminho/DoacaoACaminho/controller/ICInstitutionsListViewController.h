@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DACInstitutionListViewController : UIViewController
+@interface ICInstitutionsListViewController : UIViewController
 
 @property (nonatomic, strong) NSArray *institutions;
 

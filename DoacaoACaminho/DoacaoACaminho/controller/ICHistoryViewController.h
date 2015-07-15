@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DACHistoryViewController : UIViewController
+@interface ICHistoryViewController : UIViewController
 
 @end

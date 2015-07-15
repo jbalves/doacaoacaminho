@@ -10,7 +10,7 @@
 #import "DACCarregaInformcaoViewController.h"
 @import MapKit;
 
-@interface MapaViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UISearchBarDelegate, UITabBarControllerDelegate>
+@interface ICInstitutionsMapViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UISearchBarDelegate, UITabBarControllerDelegate>
 
 // variáveis da tela
 @property (weak, nonatomic) IBOutlet MKMapView *map;

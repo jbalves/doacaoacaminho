@@ -6,15 +6,15 @@
 //  Copyright (c) 2015 Jeferson Barros Alves. All rights reserved.
 //
 
-#import "DACListaTableViewController.h"
+#import "ICListItemsViewController.h"
 
-@interface DACListaTableViewController () {
+@interface ICListItemsViewController () {
     NSMutableArray *selectedItems;
 }
 
 @end
 
-@implementation DACListaTableViewController
+@implementation ICListItemsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
