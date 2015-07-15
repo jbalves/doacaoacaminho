@@ -44,6 +44,10 @@
     return 100.0f;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0.1;
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSIndexPath *iPath = [_tbViewHistory indexPathForSelectedRow];
     if(iPath == NULL)
