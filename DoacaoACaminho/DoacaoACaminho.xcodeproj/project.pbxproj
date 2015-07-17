@@ -19,7 +19,6 @@
 		712BAF711B0E0FB4000E2E9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF701B0E0FB4000E2E9E /* AppDelegate.m */; };
 		712BAF741B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF721B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld */; };
 		712BAF7A1B0E0FB4000E2E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF781B0E0FB4000E2E9E /* Main.storyboard */; };
-		712BAF7C1B0E0FB4000E2E9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */; };
 		712BAF7F1B0E0FB4000E2E9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */; };
 		712BAF8B1B0E0FB4000E2E9E /* DoacaoACaminhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BAF8A1B0E0FB4000E2E9E /* DoacaoACaminhoTests.m */; };
 		712BAF9C1B0E1873000E2E9E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAF9A1B0E1873000E2E9E /* Bolts.framework */; };
@@ -80,7 +79,6 @@
 		712BAF701B0E0FB4000E2E9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		712BAF731B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoacaoACaminho.xcdatamodel; sourceTree = "<group>"; };
 		712BAF791B0E0FB4000E2E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		712BAF7E1B0E0FB4000E2E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		712BAF841B0E0FB4000E2E9E /* DoacaoACaminhoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoacaoACaminhoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		712BAF891B0E0FB4000E2E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -242,7 +240,6 @@
 				1C13A1F41B49B5B0000562A4 /* model */,
 				1C13A1F51B49B5CA000562A4 /* view */,
 				1C13A1F61B49B5D9000562A4 /* controller */,
-				712BAF7B1B0E0FB4000E2E9E /* Images.xcassets */,
 				712BAF7D1B0E0FB4000E2E9E /* LaunchScreen.xib */,
 				712BAF721B0E0FB4000E2E9E /* DoacaoACaminho.xcdatamodeld */,
 				712BAF6B1B0E0FB4000E2E9E /* Supporting Files */,
@@ -388,7 +385,6 @@
 			files = (
 				712BAF7A1B0E0FB4000E2E9E /* Main.storyboard in Resources */,
 				712BAF7F1B0E0FB4000E2E9E /* LaunchScreen.xib in Resources */,
-				712BAF7C1B0E0FB4000E2E9E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

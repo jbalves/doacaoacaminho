@@ -22,9 +22,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIColor *mainColor = [UIColor colorWithRed:19.0/255 green:71.0/255 blue:121.0/255 alpha:0.9];
+    UIColor *darkBlue = [UIColor colorWithRed:19.0/255 green:71.0/255 blue:121.0/255 alpha:0.9];
+    UIColor *lighterBlue = [UIColor colorWithRed:181.0/255 green:210.0/255 blue:234.0/255 alpha:0.9];
+    
+#pragma -mark navigation bar appearance
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:19.0/255 green:71.0/255 blue:121.0/255 alpha:0.9]];
-    [[UITabBar appearance] setBarTintColor:mainColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:lighterBlue}];
+    [[UITabBar appearance] setBarTintColor:darkBlue];
+    
+#pragma -mark table view header appearance
+    [[UITableViewHeaderFooterView appearance] setTintColor:darkBlue];
+    [[UILabel appearanceWhenContainedIn:[UITableViewHeaderFooterView class], nil] setTextColor:lighterBlue];
+    
     // Override point for customization after application launch.
     [Parse setApplicationId:@"hvnIoSFbTTNV2dlp2hNroqX6zFe72eiREyheqrYi"
                   clientKey:@"idoZRMFGCwOQT5wuL3tb9d9HWt8T5XpvQLSIoSTd"];

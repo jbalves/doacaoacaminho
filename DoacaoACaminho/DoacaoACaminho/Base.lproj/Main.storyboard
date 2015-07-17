@@ -56,12 +56,18 @@
                                     <action selector="coordenadas:" destination="Gsn-ay-08U" eventType="touchUpInside" id="c0G-W7-dfT"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KrP-kN-wII">
+                            <searchBar contentMode="redraw" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrP-kN-wII">
                                 <rect key="frame" x="0.0" y="20" width="326" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" red="0.70980392160000005" green="0.82352941180000006" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCp-HZ-FED">
-                                <rect key="frame" x="329" y="20" width="46" height="44"/>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCp-HZ-FED">
+                                <rect key="frame" x="326" y="20" width="49" height="44"/>
                                 <state key="normal" title="L">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -80,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HoW-dO-QgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2670.5" y="691.5"/>
+            <point key="canvasLocation" x="2668.5" y="719.5"/>
         </scene>
         <!--Institutions List View Controller-->
         <scene sceneID="iJK-5x-19p">
@@ -101,15 +107,6 @@
                                     <outlet property="delegate" destination="XAg-QI-hyG" id="YCa-ZD-UTM"/>
                                 </connections>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urH-vF-O3D">
-                                <rect key="frame" x="329" y="20" width="46" height="44"/>
-                                <state key="normal" title="M">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Gsn-ay-08U" kind="showDetail" id="QPm-5m-uu0"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Iui-O9-BSY">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.70980392160000005" green="0.82352941180000006" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -138,6 +135,15 @@
                                     <outlet property="delegate" destination="XAg-QI-hyG" id="ieh-Kf-Teg"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urH-vF-O3D">
+                                <rect key="frame" x="329" y="20" width="46" height="44"/>
+                                <state key="normal" title="M">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gsn-ay-08U" kind="showDetail" id="QPm-5m-uu0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -162,7 +168,7 @@
         <!--Histórico-->
         <scene sceneID="Y37-Mo-FXc">
             <objects>
-                <viewController title="Histórico" id="2mj-0W-LBr" customClass="ICHistoryViewController" sceneMemberID="viewController">
+                <viewController title="Histórico" automaticallyAdjustsScrollViewInsets="NO" id="2mj-0W-LBr" customClass="ICHistoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mZg-dd-eIp"/>
                         <viewControllerLayoutGuide type="bottom" id="oZS-5h-ARV"/>
@@ -219,8 +225,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gu4-r7-Xv1">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="y1V-g3-7a8">
+                    <navigationItem key="navigationItem" title="Histórico" id="gu4-r7-Xv1">
+                        <barButtonItem key="rightBarButtonItem" title="Doar +" id="y1V-g3-7a8">
+                            <color key="tintColor" red="0.70980392160000005" green="0.82352941180000006" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="Qbz-B2-VmK" kind="show" id="b1p-kM-a0H"/>
                             </connections>
@@ -268,11 +275,12 @@
                                 <color key="textColor" red="0.074509803920000006" green="0.2784313725" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4lm-3d-JSK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4lm-3d-JSK">
                                 <rect key="frame" x="0.0" y="170" width="375" height="375"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.074509803920000006" green="0.2784313725" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.074509803920000006" green="0.2784313725" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.70980392160000005" green="0.82352941180000006" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemDetailCell" textLabel="Yvo-VW-QiQ" style="IBUITableViewCellStyleDefault" id="baw-JM-eDP">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -289,6 +297,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.074509803920000006" green="0.2784313725" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -330,7 +339,7 @@
         <!--Doação-->
         <scene sceneID="Og7-eM-Zw2">
             <objects>
-                <viewController title="Doação" id="Qbz-B2-VmK" customClass="ICListItemsViewController" sceneMemberID="viewController">
+                <viewController title="Doação" automaticallyAdjustsScrollViewInsets="NO" id="Qbz-B2-VmK" customClass="ICListItemsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jua-GO-W8y"/>
                         <viewControllerLayoutGuide type="bottom" id="dcs-KE-SCE"/>
@@ -380,7 +389,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4YB-wx-tbm">
+                    <navigationItem key="navigationItem" title="Itens a doar" id="4YB-wx-tbm">
                         <barButtonItem key="rightBarButtonItem" title="Continuar" id="nwx-fW-WXj">
                             <connections>
                                 <action selector="continueDonation:" destination="Qbz-B2-VmK" id="KJ5-Sm-IJe"/>

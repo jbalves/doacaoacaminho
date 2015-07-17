@@ -53,6 +53,10 @@
     return @"Itens Doados";
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    [view setBackgroundColor:[UIColor colorWithRed:181.0/255 green:210.0/255 blue:234.0/255 alpha:0.9]];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ItemDetailCell" forIndexPath:indexPath];
     cell.textLabel.text = (NSString*)[[donatedItems objectAtIndex:indexPath.row] valueForKey:@"name"];
