@@ -11,13 +11,28 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "ICHistoryViewController.h"
-
+#import <CloudKit/CloudKit.h>
 
 @interface AppDelegate ()
+@property (readonly, nonatomic) CKContainer *container;
+@property (readonly,nonatomic) CKDatabase *publicDatabase;
+@property (readonly,nonatomic) CKDatabase *privateDatabase;
 
 @end
 
 @implementation AppDelegate
+
+-(CKContainer *)container {
+    return [CKContainer containerWithIdentifier:@"com.jepa.iCaring"];
+}
+
+-(CKDatabase *)publicDatabase {
+    return [self.container publicCloudDatabase];
+}
+
+-(CKDatabase *)privateDatabase {
+    return [self.container privateCloudDatabase];
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
