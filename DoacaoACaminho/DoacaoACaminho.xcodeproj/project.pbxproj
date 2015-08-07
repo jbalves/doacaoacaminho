@@ -32,7 +32,6 @@
 		712BAFAB1B0E19F5000E2E9E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFAA1B0E19F5000E2E9E /* QuartzCore.framework */; };
 		712BAFAD1B0E19FD000E2E9E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFAC1B0E19FD000E2E9E /* Security.framework */; };
 		712BAFAF1B0E1A04000E2E9E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFAE1B0E1A04000E2E9E /* Social.framework */; };
-		712BAFB11B0E1A0C000E2E9E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFB01B0E1A0C000E2E9E /* StoreKit.framework */; };
 		712BAFB31B0E1A14000E2E9E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFB21B0E1A14000E2E9E /* SystemConfiguration.framework */; };
 		712BAFB51B0E1A1D000E2E9E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFB41B0E1A1D000E2E9E /* libz.dylib */; };
 		712BAFB71B0E1A25000E2E9E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFB61B0E1A25000E2E9E /* libsqlite3.dylib */; };
@@ -40,6 +39,7 @@
 		712BAFBF1B0E2093000E2E9E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBC1B0E2093000E2E9E /* FBSDKLoginKit.framework */; };
 		712BAFC01B0E2093000E2E9E /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */; };
 		7144B1851B55A69C00C93219 /* ICLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7144B1841B55A69C00C93219 /* ICLoginViewController.m */; };
+		71A102171B74E51D00FACFC5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A102161B74E51D00FACFC5 /* CloudKit.framework */; };
 		79012CB71B0E177900531F7D /* ICInstitutionsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CB61B0E177900531F7D /* ICInstitutionsMapViewController.m */; };
 		79012CB91B0E256100531F7D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79012CB81B0E256100531F7D /* MapKit.framework */; };
 		79012CBC1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79012CBB1B0E2E6700531F7D /* DACCarregaInformcaoViewController.m */; };
@@ -94,7 +94,6 @@
 		712BAFAA1B0E19F5000E2E9E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		712BAFAC1B0E19FD000E2E9E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		712BAFAE1B0E1A04000E2E9E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		712BAFB01B0E1A0C000E2E9E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		712BAFB21B0E1A14000E2E9E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		712BAFB41B0E1A1D000E2E9E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		712BAFB61B0E1A25000E2E9E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -103,6 +102,8 @@
 		712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		7144B1831B55A69C00C93219 /* ICLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICLoginViewController.h; path = controller/ICLoginViewController.h; sourceTree = "<group>"; };
 		7144B1841B55A69C00C93219 /* ICLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICLoginViewController.m; path = controller/ICLoginViewController.m; sourceTree = "<group>"; };
+		71A102151B74E50B00FACFC5 /* DoacaoACaminho.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DoacaoACaminho.entitlements; sourceTree = "<group>"; };
+		71A102161B74E51D00FACFC5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		79012CB51B0E177900531F7D /* ICInstitutionsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICInstitutionsMapViewController.h; path = controller/ICInstitutionsMapViewController.h; sourceTree = "<group>"; };
 		79012CB61B0E177900531F7D /* ICInstitutionsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICInstitutionsMapViewController.m; path = controller/ICInstitutionsMapViewController.m; sourceTree = "<group>"; };
 		79012CB81B0E256100531F7D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -119,11 +120,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				712BAFBF1B0E2093000E2E9E /* FBSDKLoginKit.framework in Frameworks */,
+				71A102171B74E51D00FACFC5 /* CloudKit.framework in Frameworks */,
 				712BAFB71B0E1A25000E2E9E /* libsqlite3.dylib in Frameworks */,
 				712BAFB51B0E1A1D000E2E9E /* libz.dylib in Frameworks */,
 				712BAFB31B0E1A14000E2E9E /* SystemConfiguration.framework in Frameworks */,
 				712BAFC01B0E2093000E2E9E /* FBSDKMessengerShareKit.framework in Frameworks */,
-				712BAFB11B0E1A0C000E2E9E /* StoreKit.framework in Frameworks */,
 				712BAFAF1B0E1A04000E2E9E /* Social.framework in Frameworks */,
 				712BAFAD1B0E19FD000E2E9E /* Security.framework in Frameworks */,
 				712BAFAB1B0E19F5000E2E9E /* QuartzCore.framework in Frameworks */,
@@ -235,6 +236,7 @@
 		712BAF6A1B0E0FB4000E2E9E /* DoacaoACaminho */ = {
 			isa = PBXGroup;
 			children = (
+				71A102151B74E50B00FACFC5 /* DoacaoACaminho.entitlements */,
 				712BAF6F1B0E0FB4000E2E9E /* AppDelegate.h */,
 				712BAF701B0E0FB4000E2E9E /* AppDelegate.m */,
 				1C13A1F41B49B5B0000562A4 /* model */,
@@ -276,13 +278,13 @@
 		712BAF991B0E182F000E2E9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71A102161B74E51D00FACFC5 /* CloudKit.framework */,
 				712BAFBB1B0E2093000E2E9E /* FBSDKCoreKit.framework */,
 				712BAFBC1B0E2093000E2E9E /* FBSDKLoginKit.framework */,
 				712BAFBD1B0E2093000E2E9E /* FBSDKMessengerShareKit.framework */,
 				712BAFB61B0E1A25000E2E9E /* libsqlite3.dylib */,
 				712BAFB41B0E1A1D000E2E9E /* libz.dylib */,
 				712BAFB21B0E1A14000E2E9E /* SystemConfiguration.framework */,
-				712BAFB01B0E1A0C000E2E9E /* StoreKit.framework */,
 				712BAFAE1B0E1A04000E2E9E /* Social.framework */,
 				712BAFAC1B0E19FD000E2E9E /* Security.framework */,
 				712BAFAA1B0E19F5000E2E9E /* QuartzCore.framework */,
@@ -347,8 +349,15 @@
 				TargetAttributes = {
 					712BAF671B0E0FB4000E2E9E = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = UDKR748QKL;
 						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
 							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
 								enabled = 1;
 							};
 						};
@@ -544,14 +553,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DoacaoACaminho/DoacaoACaminho.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DoacaoACaminho/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jepa.iCaring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -561,14 +575,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DoacaoACaminho/DoacaoACaminho.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DoacaoACaminho/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jepa.iCaring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
